@@ -70,6 +70,54 @@ git remote -v
 
 Por eso no podemos dar el mismo `git pull` sin más explicación a todos: **mi `origin` es el repositorio principal, pero el `origin` de un compañero es su fork**. En esta guía elegimos explícitamente de dónde descargamos.
 
+### Leer estos comandos palabra por palabra
+
+Estos ejemplos se ejecutan en la terminal; no son código CSS. Antes de cambiar de rama comprobamos `git status` y guardamos el trabajo pendiente como explicamos más adelante.
+
+```bash
+git switch main
+```
+
+| Parte | Qué significa |
+| --- | --- |
+| `git` | Le pedimos una acción a Git |
+| `switch` | Cambiar la rama en la que estamos trabajando |
+| `main` | Nombre de una rama que ya existe en nuestra copia |
+
+**Este comando no crea una rama ni descarga cambios.** Cambia nuestra rama actual a `main`. Podemos comprobar dónde quedamos con `git branch --show-current`; ese comando muestra el nombre y no modifica archivos.
+
+```bash
+git pull --ff-only origin main
+```
+
+| Parte | Qué significa |
+| --- | --- |
+| `git` | Utilizamos Git |
+| `pull` | Descargar cambios e incorporarlos a la rama donde estamos |
+| `--ff-only` | Solo permitir la actualización si puede hacerse avanzando el historial, sin crear una fusión adicional; si no puede, detenerse |
+| `origin` | Nombre de la dirección remota de la que descargamos; en mi copia de Oscar es `rx3card/cowpay` |
+| `main` | Rama remota cuyos cambios queremos recibir |
+
+`pull` **no cambia automáticamente nuestra rama actual a main** por llevar `main` al final. Por eso en esta receta primero hacemos `git switch main`: queremos recibir esos cambios en nuestra `main` local. En la copia de un compañero descargamos del repositorio del equipo usando `upstream`, como explica su recorrido.
+
+La secuencia anterior significa: **me coloco en mi main local y después la actualizo con lo integrado en GitHub**. No crea una rama de tarea ni sube cambios.
+
+Para crear una rama y empezar a usarla sí necesitamos `-c`:
+
+```bash
+git switch -c base-nextjs
+```
+
+`-c` significa crear. Git crea `base-nextjs` desde el punto en que estamos y nos cambia a ella. Si venimos de `main` actualizada, esa es la base de nuestra rama nueva. No ejecutamos este ejemplo hasta que vayamos a empezar esa tarea.
+
+| Comando | Resultado |
+| --- | --- |
+| `git switch main` | Cambia a la rama existente `main` |
+| `git switch -c base-nextjs` | Crea la rama `base-nextjs` y cambia a ella |
+| `git switch base-nextjs` | Vuelve a `base-nextjs` cuando ya existe |
+
+Si el nombre ya existe, no repetimos `-c`. Estos comandos trabajan en nuestro computador: la rama se publica en GitHub cuando hagamos su primer push.
+
 ## 3. Preparación de un compañero: una sola vez
 
 Si ya tenemos el fork y el proyecto clonado, empezamos comprobando los remotos; no clonamos otra copia encima.
