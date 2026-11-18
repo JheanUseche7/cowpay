@@ -15,19 +15,19 @@ Vamos a construir el frontend de CowPay a partir de nuestro [diseño en Figma](h
 
 ### Todos nuestros documentos
 
-| Documento | Para qué lo abrimos |
-| --- | --- |
-| [Este README](README.md) | Empezar, instalar las herramientas y entender cómo vamos a trabajar |
-| [Preparar la base](docs/preparar-base.md) | Crear manualmente nuestra única aplicación en la carpeta actual; lo hago yo una vez |
-| [Guía teórica y práctica](docs/guia-desde-cero.md) | Aprender React, Next.js, componentes, CSS y navegación con ejercicios |
-| [Mapa de rutas](docs/rutas.md) | Ver las pantallas, sus direcciones, prioridades y responsables |
-| [Datos y conexión futura](docs/contratos-y-reglas.md) | Separar las pantallas y los datos de ejemplo para conectarlos al backend después |
-| [Plan del equipo](docs/plan-equipo.md) | Consultar tareas, subtareas, carpetas, responsables y fechas |
+| Documento                                                       | Para qué lo abrimos                                                                                                      |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| [Este README](README.md)                                        | Empezar, instalar las herramientas y entender cómo vamos a trabajar                                                      |
+| [Preparar la base](docs/preparar-base.md)                       | Crear manualmente nuestra única aplicación en la carpeta actual; lo hago yo una vez                                      |
+| [Guía teórica y práctica](docs/guia-desde-cero.md)              | Aprender React, Next.js, componentes, CSS y navegación con ejercicios                                                    |
+| [Mapa de rutas](docs/rutas.md)                                  | Ver las pantallas, sus direcciones, prioridades y responsables                                                           |
+| [Datos y conexión futura](docs/contratos-y-reglas.md)           | Separar las pantallas y los datos de ejemplo para conectarlos al backend después                                         |
+| [Plan del equipo](docs/plan-equipo.md)                          | Consultar tareas, subtareas, carpetas, responsables y fechas                                                             |
 | [Trabajo colaborativo desde cero](docs/trabajo-colaborativo.md) | Entender Git y GitHub y seguir los pasos de nuestra primera entrega, con un recorrido para mí y otro para los compañeros |
-| [Jira y GitHub](docs/jira-y-github.md) | Relacionar una tarea con su rama y PR y saber cuándo pasarla a Hecho |
-| [Seguimiento semanal](docs/seguimiento-semanal.md) | Revisar avances en el SENA y preparar el informe para la instructora |
-| [Registro de tareas de Jira](docs/backlog-jira.json) | Consultar las claves y el registro de planificación; no es un tutorial ni código de la aplicación |
-| [Documento original de requisitos](docs/CowPay.pdf) | Consultar el contexto completo del proyecto; el alcance de esta entrega es el frontend descrito aquí |
+| [Jira y GitHub](docs/jira-y-github.md)                          | Relacionar una tarea con su rama y PR y saber cuándo pasarla a Hecho                                                     |
+| [Seguimiento semanal](docs/seguimiento-semanal.md)              | Revisar avances en el SENA y preparar el informe para la instructora                                                     |
+| [Registro de tareas de Jira](docs/backlog-jira.json)            | Consultar las claves y el registro de planificación; no es un tutorial ni código de la aplicación                        |
+| [Documento original de requisitos](docs/CowPay.pdf)             | Consultar el contexto completo del proyecto; el alcance de esta entrega es el frontend descrito aquí                     |
 
 Los documentos de `docs/` complementan este README. No tenemos que leer toda la planificación para poder cambiar nuestro primer título.
 
@@ -58,7 +58,7 @@ Los documentos originales siguen en `docs/`. El roadmap anterior nos sirve de re
 | React                  | Permite dividir las pantallas en piezas reutilizables y actualizar lo que se muestra cuando alguien interactúa.                  |
 | Next.js con App Router | Organiza páginas y navegación sobre React. También permite escribir código de servidor en la misma aplicación.                   |
 | TypeScript             | JavaScript con tipos. Empezaremos por tipos pequeños para platos, pedidos y formularios, sin patrones complicados.               |
-| Node.js y pnpm     | Node ejecuta las herramientas y el servidor. pnpm instala las dependencias del proyecto; usaremos la misma versión en el equipo. |
+| Node.js y pnpm         | Node ejecuta las herramientas y el servidor. pnpm instala las dependencias del proyecto; usaremos la misma versión en el equipo. |
 | Git y GitHub           | Guardan el historial y permiten proponer y revisar cambios mediante Pull Requests.                                               |
 
 **Vamos a utilizar CSS para que no se nos complique esta primera entrega.** Ya conocemos sus bases y vamos a seguir practicándolas mientras pasamos el diseño a código. Usaremos CSS Modules para que los estilos de nuestras pantallas no se mezclen. Más adelante, si vemos que nos sirve, podemos empezar a utilizar Tailwind o migrar algunas partes; por ahora nos concentramos en sacar el frontend juntos.
@@ -165,14 +165,14 @@ Nuestra carpeta principal es `cowpay/`. Vamos a tener una sola aplicación ahí.
 
 Por el momento solo necesitamos reconocer estos lugares:
 
-| Lugar | Qué vamos a guardar ahí |
-| --- | --- |
-| `src/` | Nuestro código |
-| `public/` | Imágenes, logos y multimedia que se pueden mostrar públicamente |
-| `docs/` | Guías y planificación |
-| `package.json` | Lista de herramientas y comandos |
-| `pnpm-lock.yaml` | Versiones concretas de las herramientas |
-| `node_modules/` | Bibliotecas instaladas por pnpm; no escribimos nuestras pantallas ahí |
+| Lugar            | Qué vamos a guardar ahí                                               |
+| ---------------- | --------------------------------------------------------------------- |
+| `src/`           | Nuestro código                                                        |
+| `public/`        | Imágenes, logos y multimedia que se pueden mostrar públicamente       |
+| `docs/`          | Guías y planificación                                                 |
+| `package.json`   | Lista de herramientas y comandos                                      |
+| `pnpm-lock.yaml` | Versiones concretas de las herramientas                               |
+| `node_modules/`  | Bibliotecas instaladas por pnpm; no escribimos nuestras pantallas ahí |
 
 Al instalar, pnpm crea un `node_modules` en la raíz. Dentro puede aparecer `.pnpm`: es parte de su funcionamiento, no otro proyecto. No tenemos que editarlo ni subirlo a GitHub. La [guía, capítulo 3](docs/guia-desde-cero.md#3-los-archivos-sin-palabras-complicadas), lo explica con un ejemplo.
 
@@ -286,19 +286,19 @@ La [guía, capítulo 12](docs/guia-desde-cero.md#12-lo-de-las-rutas-no-impide-co
 
 ## 11. Fechas de trabajo
 
-| Fecha                             | Qué debe quedar revisable                                                                                                                                                 |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 17 de noviembre                   | Reparto, rutas documentadas, tareas y decisiones de arquitectura. Voy a iniciar la preparación manual de la base.                                                          |
-| 18 de noviembre | Inicio del periodo del sprint. Tenemos inglés; no reservamos ese día como bloque de apoyo conmigo. |
-| 19 de noviembre | Objetivo de base mínima y primeras rutas. Mientras la preparo, podemos adelantar HTML/CSS de una pieza pequeña. |
-| 19 y 20 de noviembre              | Cada uno muestra una pantalla principal en progreso mediante Draft PR. Reunión semanal el 20 a las 17:00.                                                                 |
-| 23 de noviembre | Objetivo de primera pantalla sencilla; el fin de semana no es una obligación de trabajo.                                                                                                             |
-| 23 al 27 de noviembre             | Completar pantallas esenciales, navegación y formularios. Reunión semanal el 27 a las 17:00.                                                                              |
-| 30 de noviembre y 1 de diciembre | Completar el flujo de cada área y corregir lo revisado. Objetivo interno de módulos: el 1 a las 17:00.                                                                    |
-| 2 al 4 de diciembre               | Integrar áreas, revisar en celular y computador y corregir errores. Reunión el 4 a las 17:00 y cierre del sprint a las 17:45.                                                         |
-| 3 de diciembre | Ensayo de demostración presencial, de 17:00 a 17:30, dentro de la jornada.                                                                                                                      |
-| 5 y 6 de diciembre | Fin de semana sin trabajo ni disponibilidad de mi parte. No dejamos tareas obligatorias dependiendo de esos días.                                                                                                |
-| 7 de diciembre                    | Entrega final. La hora oficial la confirma el instructor.                                                                                                                 |
+| Fecha                            | Qué debe quedar revisable                                                                                                     |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 17 de noviembre                  | Reparto, rutas documentadas, tareas y decisiones de arquitectura. Voy a iniciar la preparación manual de la base.             |
+| 18 de noviembre                  | Inicio del periodo del sprint. Tenemos inglés; no reservamos ese día como bloque de apoyo conmigo.                            |
+| 19 de noviembre                  | Objetivo de base mínima y primeras rutas. Mientras la preparo, podemos adelantar HTML/CSS de una pieza pequeña.               |
+| 19 y 20 de noviembre             | Cada uno muestra una pantalla principal en progreso mediante Draft PR. Reunión semanal el 20 a las 17:00.                     |
+| 23 de noviembre                  | Objetivo de primera pantalla sencilla; el fin de semana no es una obligación de trabajo.                                      |
+| 23 al 27 de noviembre            | Completar pantallas esenciales, navegación y formularios. Reunión semanal el 27 a las 17:00.                                  |
+| 30 de noviembre y 1 de diciembre | Completar el flujo de cada área y corregir lo revisado. Objetivo interno de módulos: el 1 a las 17:00.                        |
+| 2 al 4 de diciembre              | Integrar áreas, revisar en celular y computador y corregir errores. Reunión el 4 a las 17:00 y cierre del sprint a las 17:45. |
+| 3 de diciembre                   | Ensayo de demostración presencial, de 17:00 a 17:30, dentro de la jornada.                                                    |
+| 5 y 6 de diciembre               | Fin de semana sin trabajo ni disponibilidad de mi parte. No dejamos tareas obligatorias dependiendo de esos días.             |
+| 7 de diciembre                   | Entrega final. La hora oficial la confirma el instructor.                                                                     |
 
 Seguimos las fechas exactas del correo de la instructora, aunque allí se describan como aproximadamente dos semanas. El 1 de diciembre es una fecha interna para recibir módulos; el sprint termina el 4. Ensayamos el jueves 3 y cerramos correcciones e informe el viernes 4. Los días 5 y 6 no son jornadas de trabajo para mí. En la reunión del 20 revisamos el avance real y bajamos alcance si hace falta. Nos reunimos presencialmente en el SENA: seguimiento los martes de 15:30 a 16:00 y revisión breve los viernes de 17:00 a 17:15. Los viernes dejamos el registro semanal pedido por la instructora.
 
@@ -310,18 +310,18 @@ Vamos a empezar por la [guía de trabajo colaborativo desde cero](docs/trabajo-c
 
 **Yo, Oscar, trabajo con el repositorio principal `rx3card/cowpay`. Los compañeros trabajan con sus forks.** Por eso no copiamos todos el mismo `git pull` sin mirar a qué repositorio apunta.
 
-| Lo que necesitamos hacer | Dónde está explicado |
-| --- | --- |
-| Entender rama, fork, commit, push y PR | [Primero entendamos qué compartimos](docs/trabajo-colaborativo.md#1-primero-entendamos-qué-estamos-compartiendo) |
-| Comprobar si estamos en mi copia o en un fork | [La diferencia entre nuestras copias](docs/trabajo-colaborativo.md#2-oscar-y-los-compañeros-tenemos-una-diferencia-importante) |
-| Preparar el fork de un compañero una sola vez | [Primera descarga y configuración](docs/trabajo-colaborativo.md#3-preparación-de-un-compañero-una-sola-vez) |
-| Saber qué comprobar antes de descargar cambios | [Al abrir el proyecto](docs/trabajo-colaborativo.md#4-nuestra-primera-comprobación-cada-vez-que-abrimos-el-proyecto) |
-| Actualizar y crear una rama para una tarea distinta | [Empezar una tarea nueva](docs/trabajo-colaborativo.md#5-empezar-una-tarea-nueva) |
-| Continuar mañana en la misma rama | [Continuar la misma tarea](docs/trabajo-colaborativo.md#6-continuar-mañana-con-la-misma-tarea) |
-| Guardar y subir el avance | [Commit y push paso a paso](docs/trabajo-colaborativo.md#7-guardar-y-subir-un-avance) |
-| Pedir revisión y corregir el mismo PR | [Abrir el Pull Request](docs/trabajo-colaborativo.md#8-pedir-revisión-con-un-pull-request) |
-| Revisar una pantalla e integrarla; esta parte la coordino yo | [Revisión e integración](docs/trabajo-colaborativo.md#9-cómo-voy-a-revisar-e-integrar-el-trabajo) |
-| Resolver dudas o detenernos ante un error | [Qué hacemos si algo falla](docs/trabajo-colaborativo.md#12-si-algo-falla-qué-hacemos) |
+| Lo que necesitamos hacer                                     | Dónde está explicado                                                                                                           |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| Entender rama, fork, commit, push y PR                       | [Primero entendamos qué compartimos](docs/trabajo-colaborativo.md#1-primero-entendamos-qué-estamos-compartiendo)               |
+| Comprobar si estamos en mi copia o en un fork                | [La diferencia entre nuestras copias](docs/trabajo-colaborativo.md#2-oscar-y-los-compañeros-tenemos-una-diferencia-importante) |
+| Preparar el fork de un compañero una sola vez                | [Primera descarga y configuración](docs/trabajo-colaborativo.md#3-preparación-de-un-compañero-una-sola-vez)                    |
+| Saber qué comprobar antes de descargar cambios               | [Al abrir el proyecto](docs/trabajo-colaborativo.md#4-nuestra-primera-comprobación-cada-vez-que-abrimos-el-proyecto)           |
+| Actualizar y crear una rama para una tarea distinta          | [Empezar una tarea nueva](docs/trabajo-colaborativo.md#5-empezar-una-tarea-nueva)                                              |
+| Continuar mañana en la misma rama                            | [Continuar la misma tarea](docs/trabajo-colaborativo.md#6-continuar-mañana-con-la-misma-tarea)                                 |
+| Guardar y subir el avance                                    | [Commit y push paso a paso](docs/trabajo-colaborativo.md#7-guardar-y-subir-un-avance)                                          |
+| Pedir revisión y corregir el mismo PR                        | [Abrir el Pull Request](docs/trabajo-colaborativo.md#8-pedir-revisión-con-un-pull-request)                                     |
+| Revisar una pantalla e integrarla; esta parte la coordino yo | [Revisión e integración](docs/trabajo-colaborativo.md#9-cómo-voy-a-revisar-e-integrar-el-trabajo)                              |
+| Resolver dudas o detenernos ante un error                    | [Qué hacemos si algo falla](docs/trabajo-colaborativo.md#12-si-algo-falla-qué-hacemos)                                         |
 
 Nuestro recorrido es: **tomamos una subtarea → trabajamos en una rama → guardamos y subimos avances → abrimos PR → revisamos y corregimos → integramos en main → actualizamos nuestras copias**.
 
@@ -386,7 +386,6 @@ Esa es mi ventana de disponibilidad, no una promesa de cinco horas seguidas de d
 
 Voy a revisar nuestros PR y pantallas dentro de esa disponibilidad. Dejamos avances, dificultades, recomendaciones y acuerdos con responsables. El modelo está en [seguimiento semanal](docs/seguimiento-semanal.md). Las tareas no se cierran porque yo esté conectado de noche: se cierran después de revisar e integrar el trabajo en la jornada acordada.
 
-
 ## 16. Para leer más cuando haga falta
 
 - [Instalar Next.js](https://nextjs.org/docs/app/getting-started/installation).
@@ -400,3 +399,5 @@ Voy a revisar nuestros PR y pantallas dentro de esa disponibilidad. Dejamos avan
 Si algo no se entiende, lo revisamos con un ejemplo pequeño en el SENA durante el horario de apoyo. No necesitamos aprender todas las herramientas de una vez. Vamos a ir entendiendo qué archivo estamos tocando y cómo comprobar que funciona.
 
 **Acuerdo actualizado:** usamos pnpm en todo el equipo. Dentro de CowPay no ejecutamos `npm install` ni creamos `package-lock.json`. Voy a dejar registrada la versión exacta de pnpm en `packageManager` al preparar la base. `node_modules/.pnpm` es almacenamiento interno normal de pnpm, no otra aplicación.
+
+Date: Tue Nov 17 21:00
