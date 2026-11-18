@@ -20,6 +20,7 @@ Vamos a construir el frontend de CowPay a partir de nuestro [diseño en Figma](h
 | [Este README](README.md)                                        | Empezar, instalar las herramientas y entender cómo vamos a trabajar                                                      |
 | [Preparar la base](docs/preparar-base.md)                       | Crear manualmente nuestra única aplicación en la carpeta actual; lo hago yo una vez                                      |
 | [Guía teórica y práctica](docs/guia-desde-cero.md)              | Aprender React, Next.js, componentes, CSS y navegación con ejercicios                                                    |
+| [Ejercicios prácticos](docs/ejercicios-practicos.md) | Practicar HTML, CSS, React, children y un PR en carpetas propias antes de desarrollar el módulo |
 | [Mapa de rutas](docs/rutas.md)                                  | Ver las pantallas, sus direcciones, prioridades y responsables                                                           |
 | [Datos y conexión futura](docs/contratos-y-reglas.md)           | Separar las pantallas y los datos de ejemplo para conectarlos al backend después                                         |
 | [Plan del equipo](docs/plan-equipo.md)                          | Consultar tareas, subtareas, carpetas, responsables y fechas                                                             |
