@@ -460,3 +460,5 @@ Cuando podamos hacer esto y explicarlo, seguimos con las secciones de nuestra pa
 - [Instalación de pnpm](https://pnpm.io/installation).
 
 **Siguiente paso:** elegimos nuestra primera pantalla en el [mapa de rutas](rutas.md), buscamos su subtarea en el [plan del equipo](plan-equipo.md) y seguimos el flujo de [Jira y GitHub](jira-y-github.md).
+
+**Para practicar con nuestros propios archivos:** seguimos los [ejercicios prácticos](ejercicios-practicos.md). Empiezan en HTML/CSS y después pasan a React, componentes y una primera contribución revisada.
