@@ -1,0 +1,848 @@
+[
+  {
+    "ref": "BASE-01",
+    "title": "Preparar manualmente la aplicación y las rutas",
+    "owner": "Oscar Rojas",
+    "due": "2026-11-19",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
+    "subtasks": [
+      {
+        "title": "Instalar una sola base Next.js con pnpm y CSS Modules, conservando README y docs",
+        "points": 2,
+        "jiraKey": "KAN-25",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Crear archivos de rutas que muestran las pantallas de cada área y centralizar enlaces",
+        "points": 2,
+        "jiraKey": "KAN-26",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Comprobar arranque y compilación; subir PR de base sin programar backend",
+        "points": 1,
+        "jiraKey": "KAN-27",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "base",
+    "folder": "src/app y componentes compartidos",
+    "points": 5,
+    "jiraKey": "KAN-1",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "BASE-02",
+    "title": "Dejar componentes mínimos y datos compartidos",
+    "owner": "Oscar Rojas",
+    "due": "2026-11-20",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
+    "subtasks": [
+      {
+        "title": "Preparar colores y tipografía compartidos y ejemplos de botón, campo y tarjeta",
+        "points": 2,
+        "jiraKey": "KAN-28",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Dejar carpeta por persona, CSS al lado de componentes y recursos por área",
+        "points": 2,
+        "jiraKey": "KAN-29",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Explicar al equipo un ejemplo pequeño de JSX, CSS Modules y primer PR",
+        "points": 1,
+        "jiraKey": "KAN-30",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "base",
+    "folder": "src/app y componentes compartidos",
+    "points": 5,
+    "jiraKey": "KAN-2",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "PUB-01",
+    "title": "Construir inicio y navegación pública",
+    "owner": "Jehan Useche",
+    "due": "2026-11-23",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=653-500",
+    "subtasks": [
+      {
+        "title": "Construir header y presentación principal con CSS del Figma",
+        "points": 2,
+        "jiraKey": "KAN-31",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Construir secciones restantes y footer con recursos en public/media/publico",
+        "points": 2,
+        "jiraKey": "KAN-32",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Conectar enlaces de ejemplo y revisar celular/escritorio con capturas",
+        "points": 1,
+        "jiraKey": "KAN-33",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "publico",
+    "folder": "src/features/publico y public/media/publico",
+    "points": 5,
+    "jiraKey": "KAN-3",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "PUB-02",
+    "title": "Construir directorio y ficha de restaurante",
+    "owner": "Jehan Useche",
+    "due": "2026-11-27",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=312-1473",
+    "subtasks": [
+      {
+        "title": "Maquetar tarjetas de restaurantes y controles visuales de búsqueda",
+        "points": 2,
+        "jiraKey": "KAN-34",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar ficha de restaurante con datos de ejemplo y recursos del Figma",
+        "points": 2,
+        "jiraKey": "KAN-35",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Conectar directorio, ficha y retorno con navegación; sin implementar búsqueda real",
+        "points": 1,
+        "jiraKey": "KAN-36",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "publico",
+    "folder": "src/features/publico y public/media/publico",
+    "points": 5,
+    "jiraKey": "KAN-4",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "PUB-03",
+    "title": "Completar páginas informativas esenciales",
+    "owner": "Jehan Useche",
+    "due": "2026-12-01",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=313-1999",
+    "subtasks": [
+      {
+        "title": "Maquetar Cómo funciona y Para restaurantes reutilizando estructura",
+        "points": 2,
+        "jiraKey": "KAN-37",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar Planes, Contacto y formulario visual sin validación",
+        "points": 2,
+        "jiraKey": "KAN-38",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Completar páginas informativas acordadas y revisar enlaces y responsive",
+        "points": 1,
+        "jiraKey": "KAN-39",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "publico",
+    "folder": "src/features/publico y public/media/publico",
+    "points": 5,
+    "jiraKey": "KAN-5",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "COM-00",
+    "title": "Completar bocetos de las pantallas faltantes del comensal",
+    "owner": "Oscar Rojas",
+    "due": "2026-11-24",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5333",
+    "area": "comensal",
+    "folder": "Figma, docs y src/features/comensal después de acordar bocetos",
+    "points": 5,
+    "subtasks": [
+      {
+        "title": "Inventariar pantallas existentes y faltantes del comensal sin asumir que todo Figma está terminado",
+        "points": 1,
+        "jiraKey": "KAN-40",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Preparar bocetos sencillos de los huecos del flujo mesa, menú, carrito, pedido y cuenta",
+        "points": 2,
+        "jiraKey": "KAN-41",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Acordar versión mínima y enlaces con el equipo antes de maquetar cada hueco",
+        "points": 2,
+        "jiraKey": "KAN-42",
+        "voiceUpdated": true
+      }
+    ],
+    "jiraKey": "KAN-6",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "COM-01",
+    "title": "Construir entrada de mesa, menú y detalle",
+    "owner": "Oscar Rojas",
+    "due": "2026-11-24",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5417",
+    "subtasks": [
+      {
+        "title": "Maquetar entrada de mesa con restaurante y mesa de ejemplo",
+        "points": 1,
+        "jiraKey": "KAN-43",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Maquetar menú y categorías con platos fijos, disponibles y agotados",
+        "points": 2,
+        "jiraKey": "KAN-44",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Maquetar detalle de plato y enlazarlo al carrito; sin validaciones",
+        "points": 2,
+        "jiraKey": "KAN-45",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "comensal",
+    "folder": "src/features/comensal y public/media/comensal",
+    "points": 5,
+    "jiraKey": "KAN-7",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "COM-02",
+    "title": "Maquetar carrito y seguimiento visual del pedido",
+    "owner": "Oscar Rojas",
+    "due": "2026-11-27",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5661",
+    "subtasks": [
+      {
+        "title": "Maquetar carrito o Mi pedido con cantidades y total de ejemplo",
+        "points": 2,
+        "jiraKey": "KAN-46",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Maquetar confirmación de envío y pantalla de estado con datos fijos",
+        "points": 2,
+        "jiraKey": "KAN-47",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Conectar menú, carrito y seguimiento con rutas; sin persistencia ni pedidos reales",
+        "points": 1,
+        "jiraKey": "KAN-48",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "comensal",
+    "folder": "src/features/comensal y public/media/comensal",
+    "points": 5,
+    "jiraKey": "KAN-8",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "COM-03",
+    "title": "Maquetar cuenta, división y pago visual",
+    "owner": "Oscar Rojas",
+    "due": "2026-12-01",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5879",
+    "subtasks": [
+      {
+        "title": "Maquetar cuenta y opciones de división con valores de ejemplo",
+        "points": 1,
+        "jiraKey": "KAN-49",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Maquetar método de pago y confirmación sin cálculos ni cobro real",
+        "points": 2,
+        "jiraKey": "KAN-50",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Conectar el recorrido visual y revisar las pantallas faltantes acordadas",
+        "points": 2,
+        "jiraKey": "KAN-51",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "comensal",
+    "folder": "src/features/comensal y public/media/comensal",
+    "points": 5,
+    "jiraKey": "KAN-9",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "MES-01",
+    "title": "Construir acceso, panel y listado de mesas",
+    "owner": "Samuel Correa",
+    "due": "2026-11-23",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-61",
+    "subtasks": [
+      {
+        "title": "Maquetar acceso del mesero y variante de error si existe en Figma",
+        "points": 1,
+        "jiraKey": "KAN-52",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar navegación y panel principal del mesero",
+        "points": 2,
+        "jiraKey": "KAN-53",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar listado y detalle de mesas con enlaces y CSS responsive",
+        "points": 2,
+        "jiraKey": "KAN-54",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "mesero",
+    "folder": "src/features/mesero y public/media/mesero",
+    "points": 5,
+    "jiraKey": "KAN-10",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "MES-02",
+    "title": "Construir registro y seguimiento de pedidos",
+    "owner": "Samuel Correa",
+    "due": "2026-11-27",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-916",
+    "subtasks": [
+      {
+        "title": "Maquetar selección de platos de una mesa con datos fijos",
+        "points": 2,
+        "jiraKey": "KAN-55",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar formulario de observaciones y confirmación sin validación",
+        "points": 2,
+        "jiraKey": "KAN-56",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar seguimiento de pedidos y enlazar las pantallas de ejemplo",
+        "points": 1,
+        "jiraKey": "KAN-57",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "mesero",
+    "folder": "src/features/mesero y public/media/mesero",
+    "points": 5,
+    "jiraKey": "KAN-11",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "MES-03",
+    "title": "Maquetar cuenta, efectivo y cierre de mesa",
+    "owner": "Samuel Correa",
+    "due": "2026-12-01",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-1318",
+    "subtasks": [
+      {
+        "title": "Maquetar cuenta y división de una mesa con importes fijos",
+        "points": 2,
+        "jiraKey": "KAN-58",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar efectivo y confirmación de cierre como pantallas o diálogos de ejemplo",
+        "points": 2,
+        "jiraKey": "KAN-59",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Completar perfil básico y revisar enlaces de todo el recorrido",
+        "points": 1,
+        "jiraKey": "KAN-60",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "mesero",
+    "folder": "src/features/mesero y public/media/mesero",
+    "points": 5,
+    "jiraKey": "KAN-12",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "COC-01",
+    "title": "Construir tablero de cocina",
+    "owner": "Santiago Evanz",
+    "due": "2026-11-24",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-4098",
+    "subtasks": [
+      {
+        "title": "Maquetar acceso y estructura visual de cocina",
+        "points": 1,
+        "jiraKey": "KAN-61",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Construir tarjetas de pedido con mesa, hora y observaciones de ejemplo",
+        "points": 2,
+        "jiraKey": "KAN-62",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Mostrar variantes de estados y contadores fijos; navegación de demo sin tiempo real",
+        "points": 2,
+        "jiraKey": "KAN-63",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "cocina",
+    "folder": "src/features/cocina y public/media/cocina",
+    "points": 5,
+    "jiraKey": "KAN-13",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "CAJ-01",
+    "title": "Construir apertura de caja y cuentas abiertas",
+    "owner": "Santiago Evanz",
+    "due": "2026-11-27",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=457-338",
+    "subtasks": [
+      {
+        "title": "Maquetar acceso y formulario visual de apertura de caja",
+        "points": 1,
+        "jiraKey": "KAN-64",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar lista de cuentas abiertas y detalle con datos fijos",
+        "points": 2,
+        "jiraKey": "KAN-65",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar pantalla de cobro y confirmación enlazadas; sin validación ni pago",
+        "points": 2,
+        "jiraKey": "KAN-66",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "caja",
+    "folder": "src/features/caja y public/media/caja",
+    "points": 5,
+    "jiraKey": "KAN-14",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "CAJ-02",
+    "title": "Completar historial y resumen de turno",
+    "owner": "Santiago Evanz",
+    "due": "2026-12-01",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=460-510",
+    "subtasks": [
+      {
+        "title": "Maquetar historial de cocina y caja con ejemplos",
+        "points": 2,
+        "jiraKey": "KAN-67",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar turno y cierre como pantallas de demostración",
+        "points": 2,
+        "jiraKey": "KAN-68",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Revisar navegación, recursos propios y adaptación a celular/escritorio",
+        "points": 1,
+        "jiraKey": "KAN-69",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "caja",
+    "folder": "src/features/caja y public/media/caja",
+    "points": 5,
+    "jiraKey": "KAN-15",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "ADM-01",
+    "title": "Construir acceso y panel del restaurante",
+    "owner": "Santiago Diaz Palma",
+    "due": "2026-11-23",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-2344",
+    "subtasks": [
+      {
+        "title": "Maquetar acceso de administrador y navegación privada",
+        "points": 1,
+        "jiraKey": "KAN-70",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Construir panel principal del restaurante con cifras de ejemplo",
+        "points": 2,
+        "jiraKey": "KAN-71",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Revisar layout y CSS responsive; no enlazar administración desde el sitio público",
+        "points": 1,
+        "jiraKey": "KAN-72",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "admin",
+    "folder": "src/features/admin, src/features/central y sus recursos en public/media",
+    "points": 4,
+    "jiraKey": "KAN-16",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "ADM-02",
+    "title": "Construir menú e inventario",
+    "owner": "Santiago Diaz Palma",
+    "due": "2026-11-27",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-3079",
+    "subtasks": [
+      {
+        "title": "Maquetar tabla de platos y formularios visuales de agregar/editar",
+        "points": 2,
+        "jiraKey": "KAN-73",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar inventario, ingredientes y alertas con datos fijos",
+        "points": 2,
+        "jiraKey": "KAN-74",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Mostrar diálogos de ejemplo y enlazar variantes sin validar ni guardar datos",
+        "points": 1,
+        "jiraKey": "KAN-75",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "admin",
+    "folder": "src/features/admin, src/features/central y sus recursos en public/media",
+    "points": 5,
+    "jiraKey": "KAN-17",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "ADM-03",
+    "title": "Construir personal y Central mínimo",
+    "owner": "Santiago Diaz Palma",
+    "due": "2026-12-01",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=745-39170",
+    "subtasks": [
+      {
+        "title": "Maquetar personal y formularios de alta/desactivación de ejemplo",
+        "points": 2,
+        "jiraKey": "KAN-76",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Maquetar Central, lista de solicitudes y detalle con decisiones de ejemplo",
+        "points": 2,
+        "jiraKey": "KAN-77",
+        "voiceUpdated": true,
+        "assigned": true
+      },
+      {
+        "title": "Conectar páginas privadas visuales; noindex y sin enlaces públicos; sin autenticación real",
+        "points": 1,
+        "jiraKey": "KAN-78",
+        "voiceUpdated": true,
+        "assigned": true
+      }
+    ],
+    "area": "admin",
+    "folder": "src/features/admin, src/features/central y sus recursos en public/media",
+    "points": 5,
+    "jiraKey": "KAN-18",
+    "assigned": true,
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "INT-01",
+    "title": "Integrar navegación y datos de las cinco áreas",
+    "owner": "Oscar Rojas",
+    "due": "2026-12-03",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
+    "subtasks": [
+      {
+        "title": "Revisar PR y coherencia visual de las cinco áreas",
+        "points": 2,
+        "jiraKey": "KAN-79",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Recorrer enlaces de las cinco áreas con datos de ejemplo",
+        "points": 2,
+        "jiraKey": "KAN-80",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Corregir enlaces rotos y documentar partes visuales pendientes",
+        "points": 1,
+        "jiraKey": "KAN-81",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "integracion",
+    "folder": "archivos compartidos coordinados por Oscar",
+    "points": 5,
+    "jiraKey": "KAN-19",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "INT-02",
+    "title": "Preparar privacidad administrativa y prueba final",
+    "owner": "Oscar Rojas",
+    "due": "2026-12-04",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
+    "subtasks": [
+      {
+        "title": "Revisar noindex y ausencia de enlaces administrativos en la parte pública",
+        "points": 1,
+        "jiraKey": "KAN-82",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Mantener índice de demo solo local/controlado y documentar acceso real pendiente",
+        "points": 1,
+        "jiraKey": "KAN-83",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Comprobar instalación con pnpm, compilación y navegación con el equipo",
+        "points": 2,
+        "jiraKey": "KAN-84",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "integracion",
+    "folder": "archivos compartidos coordinados por Oscar",
+    "points": 4,
+    "jiraKey": "KAN-20",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "REV-01",
+    "title": "Reunión semanal y acta del 20 de noviembre",
+    "owner": "Oscar Rojas",
+    "due": "2026-11-20",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
+    "subtasks": [
+      {
+        "title": "Revisar pantallas, PR y subtareas de los cinco; registrar avances y dificultades",
+        "points": 1,
+        "jiraKey": "KAN-85",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Preparar acta e informe semanal con evidencias y recomendaciones para la instructora",
+        "points": 1,
+        "jiraKey": "KAN-86",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "seguimiento",
+    "folder": "docs/seguimiento-semanal.md y Jira",
+    "points": 2,
+    "jiraKey": "KAN-21",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "REV-02",
+    "title": "Reunión semanal y acta del 27 de noviembre",
+    "owner": "Oscar Rojas",
+    "due": "2026-11-27",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
+    "subtasks": [
+      {
+        "title": "Revisar avances y pendientes; acordar alcance restante y ayuda entre compañeros",
+        "points": 1,
+        "jiraKey": "KAN-87",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Preparar acta e informe semanal con PR, dificultades y responsables de resolver",
+        "points": 1,
+        "jiraKey": "KAN-88",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "seguimiento",
+    "folder": "docs/seguimiento-semanal.md y Jira",
+    "points": 2,
+    "jiraKey": "KAN-22",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "REV-03",
+    "title": "Reunión de cierre del sprint el 4 de diciembre",
+    "owner": "Oscar Rojas",
+    "due": "2026-12-04",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
+    "subtasks": [
+      {
+        "title": "Revisar frontend integrado y estado real de tareas al cerrar el periodo",
+        "points": 1,
+        "jiraKey": "KAN-89",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Preparar acta e informe de cierre con evidencias y pendientes para la instructora",
+        "points": 1,
+        "jiraKey": "KAN-90",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "seguimiento",
+    "folder": "docs/seguimiento-semanal.md y Jira",
+    "points": 2,
+    "jiraKey": "KAN-23",
+    "sprintId": 1,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  },
+  {
+    "ref": "ENT-01",
+    "title": "Preparar demostración y entrega del 7 de diciembre",
+    "owner": "Oscar Rojas",
+    "due": "2026-12-07",
+    "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
+    "subtasks": [
+      {
+        "title": "Ensayar el 3 de diciembre en el SENA con participación de los cinco",
+        "points": 1,
+        "jiraKey": "KAN-91",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Corregir errores visuales el 4 de diciembre y preparar capturas e informe final dentro de la jornada",
+        "points": 1,
+        "jiraKey": "KAN-92",
+        "voiceUpdated": true
+      },
+      {
+        "title": "Entregar el 7 la versión frontend y documentar qué queda para backend",
+        "points": 1,
+        "jiraKey": "KAN-93",
+        "voiceUpdated": true
+      }
+    ],
+    "area": "entrega",
+    "folder": "docs y versión de demostración",
+    "points": 3,
+    "jiraKey": "KAN-24",
+    "sprintId": null,
+    "estimateField": "customfield_10016",
+    "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada."
+  }
+]
