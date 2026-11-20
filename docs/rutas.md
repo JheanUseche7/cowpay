@@ -4,6 +4,8 @@
 
 Estado al 20 de noviembre: las 77 rutas P0/P1 están creadas como pantallas provisionales; cada responsable desarrolla su interfaz. Las 8 rutas P2 permanecen documentadas fuera del compromiso inicial. Un nombre de ruta propuesto no demuestra que su diseño esté terminado en Figma.
 
+**Revisión de alcance del 20 de noviembre:** este mapa no cubre por sí solo todos los diseños. El [inventario y auditoría de Figma](auditoria-figma.md) documenta los 166 frames, sus variantes y lo que falta concretar. No usamos el número de rutas como número total de interfaces.
+
 ## Cómo leer este documento
 
 - `/restaurantes` es una dirección que abre el navegador.

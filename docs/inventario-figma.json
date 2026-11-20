@@ -1,0 +1,1393 @@
+{
+  "reviewDate": "2026-11-20",
+  "fileKey": "Jl44XTkbSj8jzWkU3n4VG1",
+  "method": "Inventario completo de los frames superiores; variantes conservadas; contenedores identificados. Nombres normalizados para usar punto y coma.",
+  "topLevelNodes": 173,
+  "screenFrames": 166,
+  "groups": {
+    "publico": [
+      {
+        "id": "712:257",
+        "name": "mapa-ibague",
+        "type": "FRAME",
+        "count": 9
+      },
+      {
+        "id": "653:500",
+        "name": "INICIO",
+        "type": "FRAME",
+        "count": 262
+      },
+      {
+        "id": "312:1473",
+        "name": "02-sitio-público-restaurantes 1",
+        "type": "FRAME",
+        "count": 194
+      },
+      {
+        "id": "508:803",
+        "name": "02-sitio-público-restaurantes 4",
+        "type": "FRAME",
+        "count": 199
+      },
+      {
+        "id": "508:1064",
+        "name": "02-sitio-público-restaurantes 5",
+        "type": "FRAME",
+        "count": 134
+      },
+      {
+        "id": "508:284",
+        "name": "02-sitio-público-restaurantes 2",
+        "type": "FRAME",
+        "count": 188
+      },
+      {
+        "id": "508:545",
+        "name": "02-sitio-público-restaurantes 3",
+        "type": "FRAME",
+        "count": 187
+      },
+      {
+        "id": "623:21",
+        "name": "Frame 4",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "712:46",
+        "name": "Frame 8",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "313:1999",
+        "name": "04-sitio-público-como-funciona 1",
+        "type": "FRAME",
+        "count": 146
+      },
+      {
+        "id": "313:2202",
+        "name": "05-sitio-público-para-restaurantes 1",
+        "type": "FRAME",
+        "count": 148
+      },
+      {
+        "id": "313:2424",
+        "name": "06-sitio-público-planes-y-precios 1",
+        "type": "FRAME",
+        "count": 233
+      },
+      {
+        "id": "686:87",
+        "name": "06-sitio-público-planes-y-precios 2",
+        "type": "FRAME",
+        "count": 229
+      },
+      {
+        "id": "313:2731",
+        "name": "07-sitio-público-solicitar-demostracion 1",
+        "type": "FRAME",
+        "count": 134
+      },
+      {
+        "id": "623:8",
+        "name": "Frame 3",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "644:10",
+        "name": "Preguntas-frecuentes",
+        "type": "FRAME",
+        "count": 113
+      },
+      {
+        "id": "313:3269",
+        "name": "11-legal-terminos-y-condiciones 1",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "313:3397",
+        "name": "12-legal-politica-de-privacidad 1",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "504:18",
+        "name": "12-legal-politica-de-cookies 2",
+        "type": "FRAME",
+        "count": 60
+      },
+      {
+        "id": "313:3527",
+        "name": "13-legal-pagina-no-encontrada 1",
+        "type": "FRAME",
+        "count": 48
+      },
+      {
+        "id": "313:3603",
+        "name": "09-sitio-público-contacto 1",
+        "type": "FRAME",
+        "count": 124
+      },
+      {
+        "id": "562:217",
+        "name": "checkout_pro 1",
+        "type": "FRAME",
+        "count": 76
+      },
+      {
+        "id": "689:497",
+        "name": "checkout_pro 3",
+        "type": "FRAME",
+        "count": 76
+      },
+      {
+        "id": "689:419",
+        "name": "checkout_pro 2",
+        "type": "FRAME",
+        "count": 76
+      },
+      {
+        "id": "689:576",
+        "name": "checkout_pro 4",
+        "type": "FRAME",
+        "count": 77
+      },
+      {
+        "id": "699:5",
+        "name": "mapa-ibague",
+        "type": "FRAME",
+        "count": 8
+      }
+    ],
+    "comensal": [
+      {
+        "id": "627:64",
+        "name": "Frame 5",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "295:2212",
+        "name": "15-acceso-crear-cuenta 1",
+        "type": "FRAME",
+        "count": 81
+      },
+      {
+        "id": "629:88",
+        "name": "Frame 7",
+        "type": "FRAME",
+        "count": 25
+      },
+      {
+        "id": "297:2486",
+        "name": "07-cuenta-inicio 1",
+        "type": "FRAME",
+        "count": 162
+      },
+      {
+        "id": "297:2718",
+        "name": "08-cuenta-explorar 1",
+        "type": "FRAME",
+        "count": 195
+      },
+      {
+        "id": "297:2974",
+        "name": "09-cuenta-ficha-del-restaurante 1",
+        "type": "FRAME",
+        "count": 165
+      },
+      {
+        "id": "297:3215",
+        "name": "10-cuenta-favoritos 1",
+        "type": "FRAME",
+        "count": 69
+      },
+      {
+        "id": "297:3313",
+        "name": "11-cuenta-historial 1",
+        "type": "FRAME",
+        "count": 102
+      },
+      {
+        "id": "297:3446",
+        "name": "12-cuenta-recibo 1",
+        "type": "FRAME",
+        "count": 75
+      },
+      {
+        "id": "297:3542",
+        "name": "13-cuenta-mis-resenas 1",
+        "type": "FRAME",
+        "count": 111
+      },
+      {
+        "id": "310:2",
+        "name": "14-cuenta-amigos 1",
+        "type": "FRAME",
+        "count": 85
+      },
+      {
+        "id": "311:133",
+        "name": "15-cuenta-notificaciones 1",
+        "type": "FRAME",
+        "count": 74
+      },
+      {
+        "id": "311:236",
+        "name": "16-ajustes-mi-perfil 1",
+        "type": "FRAME",
+        "count": 112
+      },
+      {
+        "id": "311:410",
+        "name": "17-ajustes-informacion-personal 1",
+        "type": "FRAME",
+        "count": 98
+      },
+      {
+        "id": "311:558",
+        "name": "18-ajustes-contrasena-y-seguridad 1",
+        "type": "FRAME",
+        "count": 84
+      },
+      {
+        "id": "311:698",
+        "name": "19-ajustes-metodos-de-pago 1",
+        "type": "FRAME",
+        "count": 105
+      },
+      {
+        "id": "311:864",
+        "name": "20-ajustes-preferencias-de-aviso 1",
+        "type": "FRAME",
+        "count": 113
+      },
+      {
+        "id": "321:4361",
+        "name": "01 ; Iniciar sesión",
+        "type": "FRAME",
+        "count": 3
+      },
+      {
+        "id": "321:4434",
+        "name": "01b ; Iniciar sesión / error",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "321:4512",
+        "name": "02 ; Inicio",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "321:4681",
+        "name": "03 ; Mi perfil",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "321:4857",
+        "name": "04 ; Favoritos",
+        "type": "FRAME",
+        "count": 5
+      },
+      {
+        "id": "321:4957",
+        "name": "05 ; Historial",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "321:5055",
+        "name": "06 ; Mis reseñas",
+        "type": "FRAME",
+        "count": 3
+      },
+      {
+        "id": "321:5170",
+        "name": "07 ; Amigos",
+        "type": "FRAME",
+        "count": 3
+      },
+      {
+        "id": "321:5255",
+        "name": "08 ; Dividir mi cuenta",
+        "type": "FRAME",
+        "count": 3
+      },
+      {
+        "id": "321:5333",
+        "name": "09 ; Mesa (entrada por QR)",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "321:5417",
+        "name": "10 ; Menú",
+        "type": "FRAME",
+        "count": 5
+      },
+      {
+        "id": "321:5548",
+        "name": "11 ; Detalle del plato",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "321:5661",
+        "name": "12 ; Mi pedido",
+        "type": "FRAME",
+        "count": 5
+      },
+      {
+        "id": "321:5755",
+        "name": "13 ; Estado del pedido",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "321:5879",
+        "name": "14 ; Dividir la cuenta",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "321:6031",
+        "name": "15 ; Pagar",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "321:6146",
+        "name": "16 ; Pago aprobado",
+        "type": "FRAME",
+        "count": 3
+      },
+      {
+        "id": "321:6233",
+        "name": "17 ; Dejar reseña",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "321:6304",
+        "name": "02accesocrearcuenta 1",
+        "type": "FRAME",
+        "count": 73
+      },
+      {
+        "id": "321:6402",
+        "name": "04accesorecuperarcontrasena 1",
+        "type": "FRAME",
+        "count": 24
+      }
+    ],
+    "mesero": [
+      {
+        "id": "323:2",
+        "name": "mesero-login",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "323:35",
+        "name": "mesero-password-request",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "729:1074",
+        "name": "mesero-password-request",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "323:61",
+        "name": "mesero-dashboard",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:124",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:262",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "450:1223",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "456:2358",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "464:466",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:539",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "416:144",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "416:443",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "416:517",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "443:3",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "443:127",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "444:261",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "444:338",
+        "name": "mesero-table-grid",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:679",
+        "name": "mesero-table-detail",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:759",
+        "name": "mesero-table-detail",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:814",
+        "name": "mesero-table-history",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "453:1870",
+        "name": "mesero-table-history",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "464:9",
+        "name": "mesero-table-history",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:916",
+        "name": "mesero-order-registration",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1072",
+        "name": "mesero-order-registration",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "445:563",
+        "name": "mesero-order-registration",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1210",
+        "name": "mesero-order-status",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "464:331",
+        "name": "mesero-order-status",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1318",
+        "name": "mesero-bill-summary",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "450:1581",
+        "name": "mesero-bill-summary",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "464:156",
+        "name": "mesero-bill-summary",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "469:631",
+        "name": "mesero-bill-summary",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "450:1669",
+        "name": "mesero-bill-summary",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "464:244",
+        "name": "mesero-bill-summary",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "676:81",
+        "name": "mesero-bill-summary",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "448:829",
+        "name": "mesero-bill-summary",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "453:1993",
+        "name": "mesero-bill-summary",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1406",
+        "name": "mesero-payment",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "448:919",
+        "name": "mesero-payment",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1489",
+        "name": "mesero-payment",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1572",
+        "name": "mesero-payment",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "456:2183",
+        "name": "mesero-finalize-service",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "456:2261",
+        "name": "mesero-finalize-service",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "448:1002",
+        "name": "mesero-finalize-service",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1733",
+        "name": "mesero-profile",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1808",
+        "name": "mesero-password-change-profile",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1869",
+        "name": "mesero-photo-change",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "323:1932",
+        "name": "mesero-logout-confirmation",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "702:765",
+        "name": "mesero-logout-confirmation",
+        "type": "FRAME",
+        "count": 2
+      }
+    ],
+    "cocina": [
+      {
+        "id": "319:3783",
+        "name": "01-acceso-iniciar-sesion 1",
+        "type": "FRAME",
+        "count": 39
+      },
+      {
+        "id": "319:3843",
+        "name": "02-acceso-iniciar-sesion--error 1",
+        "type": "FRAME",
+        "count": 42
+      },
+      {
+        "id": "321:4098",
+        "name": "03-pedidos-tablero-de-pedidos 1",
+        "type": "FRAME",
+        "count": 151
+      },
+      {
+        "id": "457:87",
+        "name": "cocina_3_historial 1",
+        "type": "FRAME",
+        "count": 97
+      },
+      {
+        "id": "460:578",
+        "name": "cocina_4_menu 1",
+        "type": "FRAME",
+        "count": 108
+      },
+      {
+        "id": "460:685",
+        "name": "cocina_5_turno 1",
+        "type": "FRAME",
+        "count": 62
+      },
+      {
+        "id": "460:746",
+        "name": "cocina_recuperar_1_solicitud 1",
+        "type": "FRAME",
+        "count": 24
+      },
+      {
+        "id": "460:770",
+        "name": "cocina_recuperar_2_enviado 1",
+        "type": "FRAME",
+        "count": 15
+      },
+      {
+        "id": "487:354",
+        "name": "cocina_ver_perfil 1",
+        "type": "FRAME",
+        "count": 42
+      }
+    ],
+    "caja": [
+      {
+        "id": "457:182",
+        "name": "cajero_1_login 1",
+        "type": "FRAME",
+        "count": 34
+      },
+      {
+        "id": "457:218",
+        "name": "cajero_2_abrir_caja 1",
+        "type": "FRAME",
+        "count": 27
+      },
+      {
+        "id": "457:338",
+        "name": "cajero_3_cuentas_abiertas 1",
+        "type": "FRAME",
+        "count": 89
+      },
+      {
+        "id": "460:429",
+        "name": "cajero_4_historial 1",
+        "type": "FRAME",
+        "count": 79
+      },
+      {
+        "id": "460:510",
+        "name": "cajero_5_turno 1",
+        "type": "FRAME",
+        "count": 64
+      },
+      {
+        "id": "460:786",
+        "name": "cajero_recuperar_1_solicitud 1",
+        "type": "FRAME",
+        "count": 23
+      },
+      {
+        "id": "460:810",
+        "name": "cajero_recuperar_2_enviado 1",
+        "type": "FRAME",
+        "count": 15
+      },
+      {
+        "id": "487:2",
+        "name": "cajero_ver_division 1",
+        "type": "FRAME",
+        "count": 65
+      },
+      {
+        "id": "487:68",
+        "name": "cajero_historial_turno 1",
+        "type": "FRAME",
+        "count": 74
+      },
+      {
+        "id": "487:218",
+        "name": "ver_perfil 1",
+        "type": "FRAME",
+        "count": 34
+      }
+    ],
+    "admin": [
+      {
+        "id": "749:2183",
+        "name": "login",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "749:2229",
+        "name": "verificacion-2fa",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "749:2272",
+        "name": "restablecer-contrasena",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "749:2311",
+        "name": "restablecer-contrasena",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "749:2344",
+        "name": "dashboard-panel-principal",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "749:2594",
+        "name": "perfil",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "749:2703",
+        "name": "1.3 menu-digital",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "749:2911",
+        "name": "1.2 menu-digital",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "749:3079",
+        "name": "1 menu-digital",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "749:3229",
+        "name": "inventario",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "749:3405",
+        "name": "cuentas-de-personal",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "749:3630",
+        "name": "reportes",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "749:3842",
+        "name": "cuentas-de-personal crear",
+        "type": "FRAME",
+        "count": 4
+      },
+      {
+        "id": "749:4143",
+        "name": "inventario-agregar",
+        "type": "FRAME",
+        "count": 3
+      }
+    ],
+    "superadmin": [
+      {
+        "id": "745:37704",
+        "name": "Superadmin-auditoria 8",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:37842",
+        "name": "Superadmin-equipo 7",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:38026",
+        "name": "Superadmin-resenas 6",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:38264",
+        "name": "Superadmin-pagos 5",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:38454",
+        "name": "Superadmin-gestion-planes 4",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:38592",
+        "name": "Superadmin-Screen 2.2 (Ficha Restaurante)",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "745:38747",
+        "name": "Superadmin- Screen 2.1 (Restaurantes Nuevo Form)",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "745:38902",
+        "name": "Superadmin- Screen 2 (Restaurantes Listado)",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "745:39053",
+        "name": "Superadmin - Screen 1.2 (Detalle Solicitud)",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "745:39170",
+        "name": "Superadmin - Screen 1 (Solicitudes)",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "745:39321",
+        "name": "Superadmin-dashboard 1",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:39521",
+        "name": "Superadmin-two-factor-auth",
+        "type": "FRAME",
+        "count": 1
+      },
+      {
+        "id": "745:39548",
+        "name": "Superadmin-recuperar-contrasena",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:39573",
+        "name": "Superadmin-login",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:39602",
+        "name": "agregar-usuario",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:39737",
+        "name": "agregar-plan",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:39879",
+        "name": "equipo-usuario-desactivado",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:40063",
+        "name": "planes-toggle-desactivado",
+        "type": "FRAME",
+        "count": 2
+      },
+      {
+        "id": "745:40201",
+        "name": "equipo-confirmacion-desactivar",
+        "type": "FRAME",
+        "count": 4
+      }
+    ],
+    "compartido": [
+      {
+        "id": "565:574",
+        "name": "EXITO",
+        "type": "FRAME",
+        "count": 10
+      },
+      {
+        "id": "689:404",
+        "name": "EXITO",
+        "type": "FRAME",
+        "count": 10
+      },
+      {
+        "id": "689:659",
+        "name": "EXITO",
+        "type": "FRAME",
+        "count": 10
+      }
+    ],
+    "sinClasificar": []
+  },
+  "contentInspection": [
+    {
+      "id": "712:257",
+      "area": "publico",
+      "width": 1440,
+      "height": 900,
+      "textCount": 9,
+      "textHash": "1afe7ccb"
+    },
+    {
+      "id": "653:500",
+      "area": "publico",
+      "width": 1440,
+      "height": 4579.45703125,
+      "textCount": 157,
+      "textHash": "31096839"
+    },
+    {
+      "id": "312:1473",
+      "area": "publico",
+      "width": 1440,
+      "height": 2208,
+      "textCount": 110,
+      "textHash": "eee2e75c"
+    },
+    {
+      "id": "508:803",
+      "area": "publico",
+      "width": 1440,
+      "height": 2208,
+      "textCount": 112,
+      "textHash": "76c8b72a"
+    },
+    {
+      "id": "508:1064",
+      "area": "publico",
+      "width": 1440,
+      "height": 2208,
+      "textCount": 79,
+      "textHash": "929bc7e5"
+    },
+    {
+      "id": "508:284",
+      "area": "publico",
+      "width": 1440,
+      "height": 2208,
+      "textCount": 108,
+      "textHash": "c296e442"
+    },
+    {
+      "id": "508:545",
+      "area": "publico",
+      "width": 1440,
+      "height": 2208,
+      "textCount": 108,
+      "textHash": "b9cfd01d"
+    },
+    {
+      "id": "623:21",
+      "area": "publico",
+      "width": 1440,
+      "height": 1816,
+      "textCount": 81,
+      "textHash": "aa5042f7"
+    },
+    {
+      "id": "712:46",
+      "area": "publico",
+      "width": 1440,
+      "height": 1816,
+      "textCount": 81,
+      "textHash": "77028135"
+    },
+    {
+      "id": "313:1999",
+      "area": "publico",
+      "width": 1440,
+      "height": 3052,
+      "textCount": 94,
+      "textHash": "4687d39a"
+    },
+    {
+      "id": "313:2202",
+      "area": "publico",
+      "width": 1440,
+      "height": 2467,
+      "textCount": 81,
+      "textHash": "aa524156"
+    },
+    {
+      "id": "313:2424",
+      "area": "publico",
+      "width": 1440,
+      "height": 3168,
+      "textCount": 129,
+      "textHash": "29be62e3"
+    },
+    {
+      "id": "686:87",
+      "area": "publico",
+      "width": 1440,
+      "height": 3168,
+      "textCount": 132,
+      "textHash": "aca0d22e"
+    },
+    {
+      "id": "313:2731",
+      "area": "publico",
+      "width": 1440,
+      "height": 1730,
+      "textCount": 89,
+      "textHash": "5ecde81c"
+    },
+    {
+      "id": "623:8",
+      "area": "publico",
+      "width": 1440,
+      "height": 2663,
+      "textCount": 78,
+      "textHash": "393d6994"
+    },
+    {
+      "id": "644:10",
+      "area": "publico",
+      "width": 1440,
+      "height": 2680.300048828125,
+      "textCount": 66,
+      "textHash": "2af2d8ee"
+    },
+    {
+      "id": "313:3269",
+      "area": "publico",
+      "width": 1440,
+      "height": 2408,
+      "textCount": 71,
+      "textHash": "f8ea6f07"
+    },
+    {
+      "id": "313:3397",
+      "area": "publico",
+      "width": 1440,
+      "height": 2303,
+      "textCount": 73,
+      "textHash": "31ccc514"
+    },
+    {
+      "id": "504:18",
+      "area": "publico",
+      "width": 1440,
+      "height": 2303,
+      "textCount": 42,
+      "textHash": "5f9cfe95"
+    },
+    {
+      "id": "313:3527",
+      "area": "publico",
+      "width": 1440,
+      "height": 1094,
+      "textCount": 34,
+      "textHash": "ab121d89"
+    },
+    {
+      "id": "313:3603",
+      "area": "publico",
+      "width": 1440,
+      "height": 1405,
+      "textCount": 76,
+      "textHash": "addb6b91"
+    },
+    {
+      "id": "562:217",
+      "area": "publico",
+      "width": 1440,
+      "height": 1150,
+      "textCount": 46,
+      "textHash": "e51580b6"
+    },
+    {
+      "id": "689:497",
+      "area": "publico",
+      "width": 1440,
+      "height": 1150,
+      "textCount": 46,
+      "textHash": "e51580b6"
+    },
+    {
+      "id": "689:419",
+      "area": "publico",
+      "width": 1440,
+      "height": 1150,
+      "textCount": 46,
+      "textHash": "468eabca"
+    },
+    {
+      "id": "689:576",
+      "area": "publico",
+      "width": 1440,
+      "height": 1150,
+      "textCount": 46,
+      "textHash": "468eabca"
+    },
+    {
+      "id": "699:5",
+      "area": "publico",
+      "width": 1440,
+      "height": 900,
+      "textCount": 13,
+      "textHash": "10f510e9"
+    },
+    {
+      "id": "627:64",
+      "area": "comensal",
+      "width": 1440,
+      "height": 900,
+      "textCount": 29,
+      "textHash": "2a63bc8e"
+    },
+    {
+      "id": "295:2212",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1079,
+      "textCount": 45,
+      "textHash": "4b323dd6"
+    },
+    {
+      "id": "629:88",
+      "area": "comensal",
+      "width": 1440,
+      "height": 900,
+      "textCount": 16,
+      "textHash": "4f333075"
+    },
+    {
+      "id": "297:2486",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1006,
+      "textCount": 74,
+      "textHash": "a4d2bacc"
+    },
+    {
+      "id": "297:2718",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1017,
+      "textCount": 93,
+      "textHash": "ef633f79"
+    },
+    {
+      "id": "297:2974",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1761,
+      "textCount": 77,
+      "textHash": "ace75050"
+    },
+    {
+      "id": "297:3215",
+      "area": "comensal",
+      "width": 1440,
+      "height": 919,
+      "textCount": 29,
+      "textHash": "fcaea8fe"
+    },
+    {
+      "id": "297:3313",
+      "area": "comensal",
+      "width": 1440,
+      "height": 900,
+      "textCount": 64,
+      "textHash": "27d9e8d3"
+    },
+    {
+      "id": "297:3446",
+      "area": "comensal",
+      "width": 1440,
+      "height": 995,
+      "textCount": 44,
+      "textHash": "9b46d06d"
+    },
+    {
+      "id": "297:3542",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1042,
+      "textCount": 51,
+      "textHash": "ddd2b0c6"
+    },
+    {
+      "id": "310:2",
+      "area": "comensal",
+      "width": 1440,
+      "height": 900,
+      "textCount": 43,
+      "textHash": "20824dc8"
+    },
+    {
+      "id": "311:133",
+      "area": "comensal",
+      "width": 1440,
+      "height": 900,
+      "textCount": 36,
+      "textHash": "c21a754a"
+    },
+    {
+      "id": "311:236",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1168,
+      "textCount": 46,
+      "textHash": "5cde979b"
+    },
+    {
+      "id": "311:410",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1083,
+      "textCount": 48,
+      "textHash": "c26121cd"
+    },
+    {
+      "id": "311:558",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1097,
+      "textCount": 42,
+      "textHash": "f460d338"
+    },
+    {
+      "id": "311:698",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1148,
+      "textCount": 53,
+      "textHash": "9a54d07e"
+    },
+    {
+      "id": "311:864",
+      "area": "comensal",
+      "width": 1440,
+      "height": 1581,
+      "textCount": 48,
+      "textHash": "f35331b4"
+    },
+    {
+      "id": "321:4361",
+      "area": "comensal",
+      "width": 390,
+      "height": 810,
+      "textCount": 15,
+      "textHash": "98b92179"
+    },
+    {
+      "id": "321:4434",
+      "area": "comensal",
+      "width": 390,
+      "height": 860,
+      "textCount": 16,
+      "textHash": "a044bc36"
+    },
+    {
+      "id": "321:4512",
+      "area": "comensal",
+      "width": 390,
+      "height": 1238,
+      "textCount": 44,
+      "textHash": "bb45562a"
+    }
+  ],
+  "limitation": "Figma MCP detuvo nuevas consultas por límite del plan Starter. Inventario completo; inspección de contenido y visual parcial. No interpretar cantidad de frames como interfaces únicas ni como compromiso de entrega."
+}

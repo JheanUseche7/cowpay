@@ -23,6 +23,8 @@ Vamos a construir el frontend de CowPay a partir de nuestro [diseño en Figma](h
 | [Ejercicios prácticos](docs/ejercicios-practicos.md) | Practicar HTML, CSS, React, children y un PR en carpetas propias antes de desarrollar el módulo |
 | [Estado y recorrido de la base](docs/base-actual.md) | Entender las rutas creadas, layouts, styles, imágenes y cómo comenzar nuestra pantalla |
 | [Registro de preparación del 20 de noviembre](docs/seguimiento/2026-11-20-preparacion.md) | Consultar el avance técnico y los pendientes, sin dar una reunión por realizada |
+| [Auditoría de pantallas y variantes de Figma](docs/auditoria-figma.md) | Comparar los 166 frames inventariados con las 77 rutas y consultar los huecos de alcance |
+| [Inventario de Figma](docs/inventario-figma.json) | Consultar los identificadores de cada frame y los límites de la revisión |
 | [Mapa de rutas](docs/rutas.md)                                  | Ver las pantallas, sus direcciones, prioridades y responsables                                                           |
 | [Datos y conexión futura](docs/contratos-y-reglas.md)           | Separar las pantallas y los datos de ejemplo para conectarlos al backend después                                         |
 | [Plan del equipo](docs/plan-equipo.md)                          | Consultar tareas, subtareas, carpetas, responsables y fechas                                                             |
@@ -44,7 +46,7 @@ Una pantalla no queda lista solamente por verse parecida a Figma. Los enlaces y 
 
 ## 2. Estado actual de la base (20 de noviembre de 2026)
 
-Ya tenemos una sola aplicación Next.js dentro de `cowpay`, con React, TypeScript y pnpm. Preparamos 77 páginas P0/P1, layouts por área, pantallas provisionales con su responsable, navegación de ejemplo y carpetas de imágenes. La compilación y TypeScript pasaron. La base permite empezar a maquetar las interfaces.
+Ya tenemos una sola aplicación Next.js dentro de `cowpay`, con React, TypeScript y pnpm. Preparamos 77 páginas P0/P1, layouts por área, pantallas provisionales con su responsable, navegación de ejemplo y carpetas de imágenes. La compilación y TypeScript pasaron. La base permite empezar a maquetar las interfaces. La [auditoría de Figma](docs/auditoria-figma.md) detectó variantes y recorridos que todavía no están desglosados; 77 rutas no equivalen a todo el diseño terminado ni planificado.
 
 Esto está preparado en la copia de trabajo. Todavía tengo que guardar, subir y fusionar el PR de estructura; no damos por publicado en main algo que solo está en nuestro computador. Cuando esté integrado, todos actualizamos nuestras copias.
 
