@@ -4,7 +4,7 @@ Proyecto de etapa lectiva del SENA.
 
 Vamos a construir el frontend de CowPay a partir de nuestro [diseño en Figma](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1). Esta es nuestra puerta de entrada: primero entendemos qué vamos a hacer, instalamos las herramientas y abrimos el proyecto; después practicamos los componentes y trabajamos en nuestra tarea.
 
-**Entrega final: 7 de diciembre de 2026.** Periodo del sprint: **18 de noviembre al 4 de diciembre de 2026**.
+**Entrega final: 7 de diciembre de 2026.** Periodo reprogramado del sprint: **21 de noviembre al 4 de diciembre de 2026**. La primera jornada de apoyo en el SENA es el lunes 23; el fin de semana no es obligatorio.
 
 ## Cómo vamos a leerlo
 
@@ -21,6 +21,8 @@ Vamos a construir el frontend de CowPay a partir de nuestro [diseño en Figma](h
 | [Preparar la base](docs/preparar-base.md)                       | Crear manualmente nuestra única aplicación en la carpeta actual; lo hago yo una vez                                      |
 | [Guía teórica y práctica](docs/guia-desde-cero.md)              | Aprender React, Next.js, componentes, CSS y navegación con ejercicios                                                    |
 | [Ejercicios prácticos](docs/ejercicios-practicos.md) | Practicar HTML, CSS, React, children y un PR en carpetas propias antes de desarrollar el módulo |
+| [Estado y recorrido de la base](docs/base-actual.md) | Entender las rutas creadas, layouts, styles, imágenes y cómo comenzar nuestra pantalla |
+| [Registro de preparación del 20 de noviembre](docs/seguimiento/2026-11-20-preparacion.md) | Consultar el avance técnico y los pendientes, sin dar una reunión por realizada |
 | [Mapa de rutas](docs/rutas.md)                                  | Ver las pantallas, sus direcciones, prioridades y responsables                                                           |
 | [Datos y conexión futura](docs/contratos-y-reglas.md)           | Separar las pantallas y los datos de ejemplo para conectarlos al backend después                                         |
 | [Plan del equipo](docs/plan-equipo.md)                          | Consultar tareas, subtareas, carpetas, responsables y fechas                                                             |
@@ -40,15 +42,13 @@ Primero vamos a construir el frontend: las pantallas que ve y usa cada persona. 
 
 Una pantalla no queda lista solamente por verse parecida a Figma. Los enlaces y botones permiten recorrer las pantallas del diseño. Los formularios son visuales: pueden mostrar datos de ejemplo y llevar a la siguiente pantalla. No exigimos validaciones, cálculos, autenticación, envío de pedidos ni pagos reales para esta entrega. Si una función todavía es simulada, debe quedar claro.
 
-## 2. Estado actual del repositorio (17 de noviembre de 2026)
+## 2. Estado actual de la base (20 de noviembre de 2026)
 
-El 17 de noviembre se retiró la base anterior de `apps/web` para empezar con una estructura más sencilla. Ahora están este README y `docs/`; todavía no hay aplicación instalada ni servidor que iniciar.
+Ya tenemos una sola aplicación Next.js dentro de `cowpay`, con React, TypeScript y pnpm. Preparamos 77 páginas P0/P1, layouts por área, pantallas provisionales con su responsable, navegación de ejemplo y carpetas de imágenes. La compilación y TypeScript pasaron. La base permite empezar a maquetar las interfaces.
 
-El historial de Git se conservó. Puede haber carpetas ocultas protegidas que administra el entorno de trabajo; no forman parte de la aplicación.
+Esto está preparado en la copia de trabajo. Todavía tengo que guardar, subir y fusionar el PR de estructura; no damos por publicado en main algo que solo está en nuestro computador. Cuando esté integrado, todos actualizamos nuestras copias.
 
-La estructura y los comandos de instalación de abajo describen el siguiente paso. **Yo preparo la base una sola vez; los demás la descargan.** No necesitamos crear un proyecto Next.js diferente por persona.
-
-Los documentos originales siguen en `docs/`. El roadmap anterior nos sirve de referencia, pero actualizamos nuestras herramientas y fechas en estos documentos. Para esta entrega usamos este README y los documentos enlazados aquí.
+El [estado y recorrido de la base](docs/base-actual.md) explica dónde trabajamos, cómo abrimos las rutas y qué hacen las piezas que añadimos. Las páginas provisionales no equivalen a las interfaces terminadas de Figma.
 
 ## 3. Stack elegido y por qué
 
@@ -86,7 +86,7 @@ node --version
 npm --version
 ```
 
-Deben aparecer números de versión. No necesitamos aprender gestores de versiones para empezar. Al compartir la base voy a registrar aquí las versiones que comprobamos, para que usemos las mismas. Esa comprobación está pendiente; todavía no hemos instalado la base nueva.
+Deben aparecer números de versión. En mi equipo comprobamos Node.js 26.12.1. El proyecto fija pnpm 12.21.0 en `package.json`. Next.js es 16.4.6 y React 19.3.1. Usamos la misma base y conservamos su archivo de versiones; no hace falta instalar un gestor de versiones para empezar.
 
 ### 2. pnpm
 
@@ -122,11 +122,9 @@ Los ejemplos de instalación usan PowerShell. Si aparece un mensaje que bloquea 
 
 ## 5. Cómo abrimos CowPay por primera vez
 
-### La base la preparo una sola vez
+### La base ya está preparada
 
-Ahora no hay `package.json`: el código anterior se retiró. Por eso **todavía no podemos ejecutar `pnpm install` ni `pnpm dev` en esta copia**. Primero voy a seguir [Preparar la base dentro de cowpay](docs/preparar-base.md), subirla y avisar al equipo.
-
-Todo se instalará directamente en nuestra carpeta `cowpay`. No vamos a crear una segunda aplicación al lado ni dentro. La guía explica cada comando y los archivos mínimos que voy a escribir manualmente.
+No repetimos `pnpm init` ni instalamos otro proyecto. Cuando el PR de estructura esté integrado, descargamos o actualizamos CowPay y ejecutamos `pnpm install` y `pnpm dev`. La [guía de preparación](docs/preparar-base.md) queda como tutorial de cómo construimos la base, no como un paso que todos debamos repetir.
 
 ### Cuando la base ya esté compartida, la descargamos
 
@@ -156,9 +154,9 @@ pnpm dev
 
 ### Antes de empezar nuestra parte completa
 
-La documentación nos da el recorrido, pero leerla una vez no sustituye la práctica de React. Primero preparo y comparto la base; después cada uno abre la aplicación, cambia un título, modifica su CSS, reutiliza una tarjeta y sube un PR pequeño siguiendo la guía. Cuando podamos hacerlo y explicarlo, seguimos con nuestra pantalla. Si algo no sale, lo revisamos juntos en el SENA.
+La documentación nos da el recorrido, pero leerla una vez no sustituye la práctica de React. Después de integrar el PR de estructura, cada uno abre la aplicación, cambia un título, modifica su CSS, reutiliza una tarjeta y sube un PR pequeño siguiendo la guía. Cuando podamos hacerlo y explicarlo, seguimos con nuestra pantalla. Si algo no sale, lo revisamos juntos en el SENA.
 
-La estructura y las rutas documentadas todavía no son archivos programados. Para que todos podamos empezar a desarrollar dentro de CowPay falta terminar y compartir esa base. Mientras tanto podemos instalar las herramientas y practicar HTML/CSS con una pieza pequeña del diseño.
+Las rutas P0/P1 ya tienen sus archivos y pantallas de trabajo. Las P2 siguen fuera de este compromiso. Falta publicar este avance mediante PR y comprobar con un compañero que puede instalarlo y abrir su área.
 
 ## 6. Una carpeta de proyecto, una aplicación
 
@@ -183,7 +181,7 @@ Se conserva el reparto que ya habíamos definido:
 
 | Persona             | Área                                                 | Carpeta de componentes y lógica propia          |
 | ------------------- | ---------------------------------------------------- | ----------------------------------------------- |
-| Santiago Diaz Palma | Administrador del restaurante y SuperAdmin de CowPay | `src/features/admin/` y `src/features/central/` |
+| Santiago Diaz Palma | Administrador del restaurante y SuperAdmin de CowPay | `src/features/admin/` y `src/features/superadmin/` |
 | Oscar Rojas         | Comensal, preparación de la base e integración       | `src/features/comensal/`                        |
 | Santiago Evanz      | Personal de cocina y cajero                          | `src/features/cocina/` y `src/features/caja/`   |
 | Jehan Useche        | Página pública de CowPay                             | `src/features/publico/`                         |
@@ -193,7 +191,7 @@ Useche tiene varias páginas públicas y secciones largas. Vamos a reutilizar he
 
 El [mapa de rutas](docs/rutas.md) dice qué páginas corresponden a cada persona y enlaza pantallas concretas del Figma. El [plan de tareas](docs/plan-equipo.md) contiene el trabajo dividido para Jira.
 
-Palma tiene dos áreas grandes. Primero entrega el panel, menú, inventario y personal del restaurante, y el listado de solicitudes de Central. Las variantes avanzadas de Central van después. Voy a ayudar a integrar y recortar alcance si el primer control muestra retrasos.
+Palma tiene dos áreas grandes. Primero entrega el panel, menú, inventario y personal del restaurante, y el listado de solicitudes de Superadmin. Las variantes avanzadas de Superadmin van después. Voy a ayudar a integrar y recortar alcance si el primer control muestra retrasos.
 
 Cada uno hace su interfaz y los enlaces de demostración; botones a otra ruta y datos fijos son suficientes. No tiene que construir un backend propio ni resolver pagos reales para poder entregar su pantalla.
 
@@ -210,7 +208,7 @@ Ejemplo de mesas:
 ```text
 src/app/mesero/mesas/page.tsx             Conecta la URL con la pantalla
 src/features/mesero/pages/MesasPage.tsx   Contenido de la pantalla
-src/features/mesero/pages/MesasPage.module.css
+src/features/mesero/styles/MesasPage.module.css
                                         Estilos de esa pantalla
 public/media/mesero/                     Imágenes propias del área
 ```
@@ -219,7 +217,7 @@ Al abrir `/mesero/mesas`, Next.js encuentra el primer archivo y este muestra `Me
 
 **No todas las carpetas son rutas.** `src/features` y `src/components` son carpetas normales de nuestro código. Dentro de `src/app`, una página necesita un archivo especial llamado `page.tsx`. El nombre `app` no significa otra aplicación ni otro `node_modules`.
 
-**Vamos a mantener las rutas de Next.js.** No lo cambiamos por una lista de rutas con React Router. Podemos guardar direcciones para los enlaces en `src/config/routes.ts`, pero ese archivo no reemplaza los `page.tsx`. Empezamos con dos páginas sencillas; los segmentos variables y las agrupaciones los practicamos después.
+**Vamos a mantener las rutas de Next.js.** No lo cambiamos por una lista de rutas con React Router. Los enlaces actuales usan sus direcciones explícitas. No existe todavía un registro `src/config/routes.ts`; podemos estudiarlo después si resulta útil. Las rutas las siguen creando los `page.tsx`.
 
 ### Nuestro espacio de trabajo
 
@@ -227,16 +225,17 @@ Cada área tendrá, conforme la necesitemos:
 
 ```text
 src/features/mesero/
-├── pages/          Pantallas completas y su CSS
-├── components/     Piezas de esa área y su CSS
-└── data/           Datos de ejemplo propios
+├── pages/          Pantallas completas
+├── components/     Piezas reutilizables del área
+├── styles/         CSS Modules de pantallas y componentes
+└── data/           Datos de ejemplo propios, cuando hagan falta
 ```
 
 `features` significa áreas del proyecto; su nombre es una convención nuestra. Los componentes que compartimos van en `src/components/ui`. Los colores y tipografía comunes van en `src/app/globals.css`. No vamos a crear todas las carpetas del backend antes de tener nuestra primera pantalla.
 
 Las imágenes van en `public/media/<area>`. Una imagen en `public/media/mesero/mesa.png` se usa como `/media/mesero/mesa.png`. El nombre `public` no forma parte del enlace. El logo compartido va en `public/media/compartido`; no guardamos información privada ahí. La [guía, capítulo 9](docs/guia-desde-cero.md#9-imágenes-logos-y-otros-recursos), trae un ejemplo.
 
-El [mapa de rutas](docs/rutas.md) conserva el reparto completo. Los accesos administrativos acordados son `/gestion-restaurante` y `/operacion-cowpay`, fuera de navegación pública y con `noindex`. Sus nombres no los protegen: la sesión y los permisos se implementan cuando hagamos el backend.
+El [mapa de rutas](docs/rutas.md) conserva el reparto completo. Los accesos administrativos acordados son `/admin` y `/superadmin`, fuera de navegación pública y con `noindex`. Sus nombres no los protegen: la sesión y los permisos se implementan cuando hagamos el backend.
 
 ## 9. De HTML y CSS a un componente
 
@@ -244,7 +243,7 @@ Un componente es una función que devuelve la estructura de una pieza de interfa
 
 ```tsx
 // Ejemplo educativo: todavía no es un archivo creado en el proyecto.
-import styles from "./RestaurantCard.module.css";
+import styles from "../styles/RestaurantCard.module.css";
 
 export function RestaurantCard() {
   return (
@@ -287,23 +286,23 @@ La [guía, capítulo 12](docs/guia-desde-cero.md#12-lo-de-las-rutas-no-impide-co
 
 ## 11. Fechas de trabajo
 
-| Fecha                            | Qué debe quedar revisable                                                                                                     |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 17 de noviembre                  | Reparto, rutas documentadas, tareas y decisiones de arquitectura. Voy a iniciar la preparación manual de la base.             |
-| 18 de noviembre                  | Inicio del periodo del sprint. Tenemos inglés; no reservamos ese día como bloque de apoyo conmigo.                            |
-| 19 de noviembre                  | Objetivo de base mínima y primeras rutas. Mientras la preparo, podemos adelantar HTML/CSS de una pieza pequeña.               |
-| 19 y 20 de noviembre             | Cada uno muestra una pantalla principal en progreso mediante Draft PR. Reunión semanal el 20 a las 17:00.                     |
-| 23 de noviembre                  | Objetivo de primera pantalla sencilla; el fin de semana no es una obligación de trabajo.                                      |
-| 23 al 27 de noviembre            | Completar pantallas esenciales, navegación y formularios. Reunión semanal el 27 a las 17:00.                                  |
-| 30 de noviembre y 1 de diciembre | Completar el flujo de cada área y corregir lo revisado. Objetivo interno de módulos: el 1 a las 17:00.                        |
-| 2 al 4 de diciembre              | Integrar áreas, revisar en celular y computador y corregir errores. Reunión el 4 a las 17:00 y cierre del sprint a las 17:45. |
-| 3 de diciembre                   | Ensayo de demostración presencial, de 17:00 a 17:30, dentro de la jornada.                                                    |
-| 5 y 6 de diciembre               | Fin de semana sin trabajo ni disponibilidad de mi parte. No dejamos tareas obligatorias dependiendo de esos días.             |
-| 7 de diciembre                   | Entrega final. La hora oficial la confirma el instructor.                                                                     |
+Reprogramamos el trabajo pendiente el 20 de noviembre porque primero necesitábamos compartir una base común. El periodo empieza el sábado 21 de noviembre; no convierte el fin de semana en una jornada obligatoria. Mi apoyo empieza el lunes 23 en el SENA. La entrega oficial sigue siendo el 7 de diciembre.
 
-Seguimos las fechas exactas del correo de la instructora, aunque allí se describan como aproximadamente dos semanas. El 1 de diciembre es una fecha interna para recibir módulos; el sprint termina el 4. Ensayamos el jueves 3 y cerramos correcciones e informe el viernes 4. Los días 5 y 6 no son jornadas de trabajo para mí. En la reunión del 20 revisamos el avance real y bajamos alcance si hace falta. Nos reunimos presencialmente en el SENA: seguimiento los martes de 15:30 a 16:00 y revisión breve los viernes de 17:00 a 17:15. Los viernes dejamos el registro semanal pedido por la instructora.
+| Fecha | Objetivo de revisión |
+| --- | --- |
+| 21 de noviembre | Inicio del periodo reprogramado; lectura o práctica por cuenta propia si alguien tiene disponibilidad |
+| 23 de noviembre | Publicar y comprobar la base con el equipo; registrar bloqueos de arranque |
+| 24 de noviembre | Práctica de contribución y bocetos mínimos del comensal; seguimiento 15:30–16:00 |
+| 26 de noviembre | Primer avance revisable de Inicio público, mesero y administrador; PR pequeño, no todo el módulo |
+| 27 de noviembre | Entrada y menú del comensal, cocina y caja; revisión semanal 17:00–17:15 |
+| 30 de noviembre | Directorio y ficha, pedidos del mesero, menú e inventario del administrador |
+| 1 de diciembre | Seguimiento 15:30–16:00; detectar lo esencial que todavía falta e integrar avances |
+| 3 de diciembre | Recorridos esenciales de cada área listos para revisión; ensayo 17:00–17:30 |
+| 4 de diciembre | Integración y correcciones finales; revisión 17:00–17:15, cierre 17:45 |
+| 5 y 6 de diciembre | Sin trabajo obligatorio ni disponibilidad mía |
+| 7 de diciembre | Entrega final, en el horario que confirme la instructora |
 
-**Diario:** cada persona deja en su tarea qué avanzó, qué hará y qué la bloquea. Voy a revisar los PR en el siguiente bloque disponible dentro del SENA; los del miércoles o de después de las 18:00 pasan a mi siguiente jornada de apoyo. Nadie espera al 1 de diciembre para mostrar código.
+Las prioridades mandan: primero completamos el recorrido P0, luego los P1 que podamos terminar. No prometemos entregar 77 interfaces finales solo porque sus rutas existan. Integramos PR durante el periodo, no esperamos al 3 para juntar todo. Si falta capacidad, lo dejamos registrado en la revisión del 27 y ajustamos el alcance.
 
 ## 12. Cómo trabajar con Git y GitHub
 
@@ -336,7 +335,7 @@ Cada uno trabaja en archivos acordados de su área. Las ramas separan nuestro tr
 
 - Antes de editar, anotamos en la tarea qué parte y qué archivos vamos a tocar.
 - Yo coordino rutas, configuración, dependencias, estilos globales y componentes compartidos. Si hace falta cambiarlos, acordamos quién lo hará.
-- Los estilos propios van junto a la pantalla o componente, en su CSS Module.
+- Los estilos propios van en `styles` dentro de su área, en archivos `.module.css`.
 - Entregamos cambios pequeños y descargamos los cambios integrados antes de empezar una tarea nueva; si continuamos una tarea abierta, los incorporamos a esa rama según la guía.
 - No subimos bibliotecas, resultados de compilación ni secretos. Revisamos lo que seleccionamos para cada commit.
 - No forzamos un push ni descartamos archivos para intentar resolver un mensaje que no entendemos.
@@ -355,7 +354,7 @@ Estas son nuestras reglas de trabajo. Las protecciones de `main` y las comprobac
 - Usa datos compartidos y diferencia una simulación de una acción real.
 - Tiene PR con instrucciones y capturas, y está integrado para considerarlo entregado.
 
-Si una página aún no está hecha, debe mostrar su título y que está pendiente. Un enlace que lleva a una página provisional no significa que la función esté terminada.
+Cada página provisional muestra su título, responsable y una explicación de lo que irá allí. No añadimos un párrafo de estado a todas las pantallas. Un enlace que lleva a una página provisional no significa que la función esté terminada.
 
 ## 15. Jira: cómo lo vamos a usar
 
@@ -371,7 +370,7 @@ Cada tarea lleva objetivo, pantalla de Figma, ruta, subtareas, responsable, punt
 
 El proyecto de Jira es **CowPay (KAN)** y su [tablero existente](https://rojasricosworkspace-65f8ece0.atlassian.net/jira/software/projects/KAN/boards/1). Los cinco ya tenemos acceso y tareas asignadas en el proyecto. Las 24 tareas y 69 subtareas están creadas y asignadas según el reparto. Si después se incorpora alguien más, primero lo invitamos al proyecto; no alcanza con escribir su nombre en la descripción.
 
-Ya tenemos Backlog, Sprints y estimación por puntos activados. Nuestro sprint **CowPay · Frontend · 18 nov – 4 dic 2026** está activo, con inicio planificado el 18 a las 13:00 y cierre el 4 a las 17:45, hora de Colombia. Incluye 23 tareas principales de desarrollo y seguimiento. La entrega final del 7 está aparte en KAN-24. Los puntos están en el campo de estimación de las tareas principales y detallados en sus subtareas; no los sumamos dos veces.
+Ya tenemos Backlog, Sprints y estimación por puntos activados. Nuestro sprint **CowPay; Frontend; 21 nov – 4 dic 2026** está activo, con inicio reprogramado el 21 a las 13:00 y cierre el 4 a las 17:45, hora de Colombia. Incluye 23 tareas principales de desarrollo y seguimiento. La entrega final del 7 está aparte en KAN-24. Los puntos están en el campo de estimación de las tareas principales y detallados en sus subtareas; no los sumamos dos veces.
 
 En [Jira y GitHub](docs/jira-y-github.md) dejamos explicado cómo relacionamos cada subtarea con su rama y PR y cuándo la pasamos a Hecho. Ya instalamos la aplicación en Jira y GitHub con acceso seleccionado solo a `rx3card/cowpay`; falta confirmar la sincronización porque el asistente de Atlassian se queda cargando. Jira registra el estado que dejamos y la actividad conectada; no comprueba automáticamente que una pantalla esté bien.
 

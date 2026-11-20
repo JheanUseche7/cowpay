@@ -8,12 +8,12 @@ Nos reunimos **presencialmente en el SENA**, dentro de la jornada:
 | --- | --- | --- | --- |
 | Seguimiento de trabajo | Martes 24 de noviembre | 15:30–16:00 | Revisar pantallas, dudas y apoyo entre áreas |
 | Seguimiento de trabajo | Martes 1 de diciembre | 15:30–16:00 | Revisar módulos y preparar integración |
-| Registro semanal | Viernes 20 de noviembre | 17:00–17:15 | Primera evidencia, dificultades y acuerdos |
+| Arranque reprogramado | Lunes 23 de noviembre | Dentro del bloque 13:00–18:00 | Comprobar instalación, reparto y bloqueos |
 | Registro semanal | Viernes 27 de noviembre | 17:00–17:15 | Avance y ajuste de alcance |
 | Ensayo | Jueves 3 de diciembre | 17:00–17:30 | Recorrer la demostración juntos |
 | Registro semanal y cierre | Viernes 4 de diciembre | 17:00–17:15 | Revisar la versión final y preparar el informe |
 
-El informe de cada viernes lo dejamos antes de las 18:00. Cerramos el sprint el 4 a las 17:45. La sesión del martes 17 no se registra como realizada sin un acta real.
+El informe de cada viernes lo dejamos antes de las 18:00. Cerramos el sprint el 4 a las 17:45. Los registros de preparación del 20 no equivalen a una reunión realizada; solo anotamos asistencia y acuerdos de reuniones que hayan ocurrido.
 
 Estudio de 12:00 a 18:00. Para dudas, revisión y apoyo me tienen de **13:00 a 18:00 los lunes, martes, jueves y viernes**. Los miércoles tenemos inglés y no reservamos ese bloque para el proyecto. Fuera del SENA no trabajo en CowPay ni respondo consultas; las dejamos por escrito para mi siguiente jornada. No contamos conmigo el sábado 5 ni el domingo 6.
 
@@ -35,7 +35,7 @@ Nuestro compromiso es construir el frontend visual, con datos de ejemplo y naveg
 El correo pide reuniones y registro de avances, inconvenientes y recomendaciones. Este informe nos sirve para presentar ese registro de manera ordenada. Lo preparo después de la reunión; no voy a inventar resultados ni enviarlo automáticamente.
 
 **Proyecto:** CowPay.  
-**Periodo de desarrollo:** 18 de noviembre–4 de diciembre de 2026.  
+**Periodo reprogramado:** 21 de noviembre–4 de diciembre de 2026. Primera jornada de apoyo: lunes 23.  
 **Entrega final:** 7 de diciembre de 2026.  
 **Fecha y hora real de la reunión:** pendiente.  
 **Asistentes reales:** pendiente.  

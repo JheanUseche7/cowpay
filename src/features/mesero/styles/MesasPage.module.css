@@ -1,0 +1,13 @@
+.page {
+  padding: 24px;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 32px;
+}
+
+.description {
+  max-width: 640px;
+  line-height: 1.5;
+}

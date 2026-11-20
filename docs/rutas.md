@@ -2,12 +2,12 @@
 
 [Volver al README](../README.md). Después de practicar nuestra primera pantalla, consultamos aquí las direcciones y el reparto. La explicación paso a paso está en la [guía teórica y práctica](guia-desde-cero.md).
 
-Estado: propuesta de implementación basada en las pantallas inspeccionadas del Figma. No son rutas ya programadas. Yo las creo en la base y cada responsable desarrolla su contenido. Los nombres de URL son una convención del equipo; no tienen que copiar el nombre de cada frame.
+Estado al 20 de noviembre: las 77 rutas P0/P1 están creadas como pantallas provisionales; cada responsable desarrolla su interfaz. Las 8 rutas P2 permanecen documentadas fuera del compromiso inicial. Un nombre de ruta propuesto no demuestra que su diseño esté terminado en Figma.
 
 ## Cómo leer este documento
 
 - `/restaurantes` es una dirección que abre el navegador.
-- `src/app/restaurantes/page.tsx` es el archivo que crea esa dirección.
+- `src/app/(publico)/restaurantes/page.tsx` es el archivo que crea esa dirección.
 - `[slug]`, `[id]` y `[code]` son partes variables. Se usa un valor concreto al navegar, por ejemplo `/r/arepique`.
 - Un modal, un error o una pestaña no siempre necesitan una página independiente.
 - P0 es el recorrido mínimo. P1 se hace después del P0 del área. P2 queda fuera del compromiso inicial y se reevalúa el 27 de noviembre.
@@ -19,20 +19,20 @@ Referencia: [INICIO](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLET
 
 | Ruta | Archivo dentro de `src/app/` | Pantalla | Prioridad |
 | --- | --- | --- | --- |
-| `/` | `page.tsx` | Inicio | P0 |
-| `/restaurantes` | `restaurantes/page.tsx` | Directorio con controles visuales de búsqueda y filtros | P0 |
-| `/r/[slug]` | `r/[slug]/page.tsx` | Ficha pública de restaurante, sin pedir sin sesión de mesa | P0 |
-| `/como-funciona` | `como-funciona/page.tsx` | Explicación del flujo | P1 |
-| `/para-restaurantes` | `para-restaurantes/page.tsx` | Presentación para negocios | P1 |
-| `/planes` | `planes/page.tsx` | Planes informativos | P1 |
-| `/demo/solicitar` | `demo/solicitar/page.tsx` | Formulario de solicitud de demostración | P1 |
-| `/nosotros` | `nosotros/page.tsx` | Equipo y proyecto | P1 |
-| `/contacto` | `contacto/page.tsx` | Contacto visual, con navegación de ejemplo | P1 |
-| `/preguntas-frecuentes` | `preguntas-frecuentes/page.tsx` | Preguntas desplegables | P1 |
-| `/legal/terminos` | `legal/terminos/page.tsx` | Texto provisional de términos | P1 |
-| `/legal/privacidad` | `legal/privacidad/page.tsx` | Texto provisional de privacidad | P1 |
-| `/legal/cookies` | `legal/cookies/page.tsx` | Texto provisional de cookies | P1 |
-| `/mapa` | `mapa/page.tsx` | Descubrimiento geográfico real | P2 |
+| `/` | `(publico)/page.tsx` | Inicio | P0 |
+| `/restaurantes` | `(publico)/restaurantes/page.tsx` | Directorio con controles visuales de búsqueda y filtros | P0 |
+| `/r/[slug]` | `(publico)/r/[slug]/page.tsx` | Ficha pública del restaurante | P0 |
+| `/como-funciona` | `(publico)/como-funciona/page.tsx` | Explicación del flujo | P1 |
+| `/para-restaurantes` | `(publico)/para-restaurantes/page.tsx` | Presentación para negocios | P1 |
+| `/planes` | `(publico)/planes/page.tsx` | Planes informativos | P1 |
+| `/demo/solicitar` | `(publico)/demo/solicitar/page.tsx` | Formulario de solicitud de demostración | P1 |
+| `/nosotros` | `(publico)/nosotros/page.tsx` | Equipo y proyecto | P1 |
+| `/contacto` | `(publico)/contacto/page.tsx` | Contacto visual, con navegación de ejemplo | P1 |
+| `/preguntas-frecuentes` | `(publico)/preguntas-frecuentes/page.tsx` | Preguntas desplegables | P1 |
+| `/legal/terminos` | `(publico)/legal/terminos/page.tsx` | Texto provisional de términos | P1 |
+| `/legal/privacidad` | `(publico)/legal/privacidad/page.tsx` | Texto provisional de privacidad | P1 |
+| `/legal/cookies` | `(publico)/legal/cookies/page.tsx` | Texto provisional de cookies | P1 |
+| `/mapa` | `(publico)/mapa/page.tsx` | Descubrimiento geográfico real | P2 |
 
 Más referencias: [directorio](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=312-1473), [cómo funciona](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=313-1999), [planes](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=313-2424).
 
@@ -52,7 +52,7 @@ Header y footer públicos se comparten en estas páginas. La página 404 se impl
 
 Referencias: [entrada QR](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5333), [menú móvil](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5417), [división](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5879).
 
-Para la demo usaremos la mesa `/r/arepique/mesa/AX7K2`. El código del QR identifica una mesa, pero no será una autorización permanente para pedir: la sesión válida se resolverá en el servidor real.
+Para la demo usaremos la mesa `/r/arepique/mesa/AX7K2`. El código del ejemplo identifica la mesa dentro del recorrido. No estamos creando una mesa por escribir un enlace.
 
 | Ruta | Pantalla | Prioridad |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ Referencia: [panel](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE
 
 | Ruta | Pantalla | Prioridad |
 | --- | --- | --- |
-| `/mesero/entrar` | Acceso simulado y variante de error | P0 |
+| `/mesero/entrar` | Inicio de sesión del mesero | P0 |
 | `/mesero` | Resumen del turno | P0 |
 | `/mesero/mesas` | Mesas y sus estados de ejemplo | P0 |
 | `/mesero/mesas/[id]` | Detalle de mesa y acciones | P0 |
@@ -107,14 +107,14 @@ Referencias: [tablero de cocina](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n
 
 | Ruta | Pantalla | Prioridad |
 | --- | --- | --- |
-| `/cocina/entrar` | Acceso simulado | P0 |
-| `/cocina` | Tablero y cambio de estados locales | P0 |
+| `/cocina/entrar` | Inicio de sesión | P0 |
+| `/cocina` | Tablero y estados de pedidos | P0 |
 | `/cocina/historial` | Pedidos preparados | P1 |
 | `/cocina/menu` | Consulta de platos | P1 |
 | `/cocina/turno` | Contadores del turno | P1 |
 | `/cocina/perfil` | Perfil | P1 |
 | `/cocina/recuperar` | Recuperación visual | P1 |
-| `/caja/entrar` | Acceso simulado | P0 |
+| `/caja/entrar` | Inicio de sesión | P0 |
 | `/caja/abrir` | Apertura de caja simulada | P0 |
 | `/caja` | Resumen de caja | P0 |
 | `/caja/cuentas` | Cuentas abiertas | P0 |
@@ -126,36 +126,36 @@ Referencias: [tablero de cocina](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n
 
 El acceso puede reutilizar un formulario común con textos y tema distintos. La simulación del tablero no debe anunciar que recibe pedidos reales de otros dispositivos.
 
-## Santiago Diaz Palma: administrador y Central
+## Santiago Diaz Palma: administrador y Superadmin
 
-Referencias: [panel administrador](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-2344), [menú](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-3079), [inventario](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-3229), [Central](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=745-39321).
+Referencias: [panel administrador](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-2344), [menú](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-3079), [inventario](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-3229), [Superadmin](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=745-39321).
 
 | Ruta | Pantalla | Prioridad |
 | --- | --- | --- |
-| `/gestion-restaurante/entrar` | Acceso simulado del administrador | P0 |
-| `/gestion-restaurante` | Panel principal | P0 |
-| `/gestion-restaurante/menu` | Lista, crear/editar plato y disponibilidad local | P0 |
-| `/gestion-restaurante/inventario` | Lista y formulario de ingredientes | P0 |
-| `/gestion-restaurante/personal` | Cuentas de personal y alta local | P0 |
-| `/gestion-restaurante/reportes` | Resumen visual con datos de ejemplo | P1 |
-| `/gestion-restaurante/perfil` | Perfil del negocio | P1 |
-| `/gestion-restaurante/recuperar` | Recuperación visual | P1 |
-| `/gestion-restaurante/verificar` | Código de verificación visual, no MFA real | P1 |
-| `/operacion-cowpay/entrar` | Acceso simulado de SuperAdmin | P0 |
-| `/operacion-cowpay` | Resumen mínimo | P0 |
-| `/operacion-cowpay/solicitudes` | Listado y acceso al detalle | P0 |
-| `/operacion-cowpay/solicitudes/[id]` | Aprobar/rechazar localmente | P0 |
-| `/operacion-cowpay/restaurantes` | Restaurantes de demostración | P1 |
-| `/operacion-cowpay/restaurantes/[id]` | Ficha administrativa | P1 |
-| `/operacion-cowpay/verificar` | Verificación visual | P1 |
-| `/operacion-cowpay/recuperar` | Recuperación visual | P1 |
-| `/operacion-cowpay/planes` | Gestión avanzada de planes | P2 |
-| `/operacion-cowpay/pagos` | Operación financiera real | P2 |
-| `/operacion-cowpay/resenas` | Moderación avanzada | P2 |
-| `/operacion-cowpay/equipo` | Gestión del equipo de plataforma | P2 |
-| `/operacion-cowpay/auditoria` | Auditoría real | P2 |
+| `/admin/entrar` | Inicio de sesión del administrador | P0 |
+| `/admin` | Panel principal | P0 |
+| `/admin/menu` | Lista, crear/editar plato y disponibilidad | P0 |
+| `/admin/inventario` | Lista y formulario de ingredientes | P0 |
+| `/admin/personal` | Cuentas de personal y formulario de alta | P0 |
+| `/admin/reportes` | Resumen visual con datos de ejemplo | P1 |
+| `/admin/perfil` | Perfil del negocio | P1 |
+| `/admin/recuperar` | Recuperación visual | P1 |
+| `/admin/verificar` | Código de verificación visual, no MFA real | P1 |
+| `/superadmin/entrar` | Inicio de sesión de Superadmin | P0 |
+| `/superadmin` | Resumen mínimo | P0 |
+| `/superadmin/solicitudes` | Listado y acceso al detalle | P0 |
+| `/superadmin/solicitudes/[id]` | Detalle de solicitud | P0 |
+| `/superadmin/restaurantes` | Restaurantes de demostración | P1 |
+| `/superadmin/restaurantes/[id]` | Ficha administrativa | P1 |
+| `/superadmin/verificar` | Verificación visual | P1 |
+| `/superadmin/recuperar` | Recuperación visual | P1 |
+| `/superadmin/planes` | Gestión avanzada de planes | P2 |
+| `/superadmin/pagos` | Operación de pagos | P2 |
+| `/superadmin/resenas` | Moderación avanzada | P2 |
+| `/superadmin/equipo` | Gestión del equipo de plataforma | P2 |
+| `/superadmin/auditoria` | Auditoría | P2 |
 
-Las variantes agregar ingrediente, editar plato y desactivar personal se harán con diálogos y estado local. No crean tres páginas independientes de la misma tabla.
+Las variantes agregar ingrediente, editar plato y desactivar personal podrán representarse con diálogos o vistas de ejemplo. No crean tres páginas independientes de la misma tabla.
 
 ## Base común: Oscar
 
@@ -164,7 +164,7 @@ Las variantes agregar ingrediente, editar plato y desactivar personal se harán 
 - `src/app/not-found.tsx`: dirección inexistente.
 - Componentes iniciales: botón, campo, tarjeta, mensaje, diálogo y estado vacío.
 - Acuerdo de un restaurante, mesa, platos y pedido común.
-- No generar endpoints vacíos con respuestas de éxito para simular backend terminado.
+- No generamos endpoints vacíos para presentar el backend como terminado.
 
 ## Cómo revisar las rutas
 
@@ -174,14 +174,100 @@ En el control del 27 se deciden los P1 que caben. Los P2 pueden documentarse sin
 
 ## Privacidad de administración
 
-`/gestion-restaurante/*` y `/operacion-cowpay/*` son privadas; no aparecen en navegación pública ni sitemap. Las rutas privadas y sus accesos llevarán `noindex` en la aplicación real. `/demo` será solo local o de demostración controlada, no un listado público de accesos privados.
+`/admin/*` y `/superadmin/*` son privadas; no aparecen en navegación pública ni sitemap. Las rutas privadas y sus accesos llevarán `noindex` en la aplicación real. `/demo` será solo local o de demostración controlada, no un listado público de accesos privados.
 
-El nombre menos evidente que pueda elegirse para Central no reemplaza autenticación. Las rutas son visibles en el código, historial y peticiones. Se comprobará sesión y rol en servidor, en cada acción y consulta, con aislamiento entre restaurantes. La elección final del prefijo la hago yo al crear la base y se aplica de manera consistente. No estamos creando aún un acceso real.
+El nombre menos evidente que pueda elegirse para Superadmin no reemplaza autenticación. Las rutas son visibles en el código, historial y peticiones. Se comprobará sesión y rol en servidor, en cada acción y consulta, con aislamiento entre restaurantes. Los prefijos definitivos de esta base son `/admin` y `/superadmin`. No estamos creando aún un acceso real.
 
 ## Alcance visual que acordamos
 
 Esta entrega es solo frontend. Se permiten datos fijos, botones que cambian de ruta y formularios sin validación ni envío. Las acciones de agregar, editar, cobrar o aprobar pueden llevar a una pantalla de ejemplo ya preparada. No se exige lógica de negocio, cálculos, persistencia ni sincronización. Se conserva separación de componentes, datos y servicios para una conexión futura.
 
-El comensal tiene partes sin diseñar: voy a inventariar primero lo disponible y lo faltante y preparar versiones sencillas coherentes para continuar; no se considera todo Figma completo. Los nombres de carpetas de features (`admin`, `central`) no tienen que coincidir con URL; las rutas las preparo yo y muestran esas pantallas.
+El comensal tiene partes sin diseñar: voy a inventariar primero lo disponible y lo faltante y preparar versiones sencillas coherentes para continuar; no se considera todo Figma completo. Los nombres de carpetas de features (`admin`, `superadmin`) no tienen que coincidir con URL; las rutas las preparo yo y muestran esas pantallas.
 
 **Siguiente paso:** buscamos la tarea de nuestra pantalla en el [plan del equipo](plan-equipo.md) y acordamos los archivos que vamos a tocar antes de empezar.
+
+## Archivos reales de la base
+
+Este inventario corresponde a los archivos preparados el 20 de noviembre. La ruta se escribe sin los grupos entre paréntesis; la columna de pantalla indica dónde trabajamos. El CSS correspondiente está en styles de la misma área. Las páginas creadas no significan que hayamos terminado esos diseños.
+
+| Dirección | Archivo de pantalla |
+| --- | --- |
+| `/comensal/ajustes` | `src/features/comensal/pages/AjustesPage.tsx` |
+| `/comensal/favoritos` | `src/features/comensal/pages/FavoritosPage.tsx` |
+| `/comensal/historial` | `src/features/comensal/pages/HistorialPage.tsx` |
+| `/comensal` | `src/features/comensal/pages/InicioComensalPage.tsx` |
+| `/comensal/recibos/[id]` | `src/features/comensal/pages/ReciboDetallePage.tsx` |
+| `/comensal/resenas` | `src/features/comensal/pages/ResenasPage.tsx` |
+| `/entrar` | `src/features/comensal/pages/EntrarPage.tsx` |
+| `/r/[slug]/mesa/[code]/carrito` | `src/features/comensal/pages/CarritoMesaPage.tsx` |
+| `/r/[slug]/mesa/[code]/confirmacion` | `src/features/comensal/pages/ConfirmacionPagoMesaPage.tsx` |
+| `/r/[slug]/mesa/[code]/cuenta` | `src/features/comensal/pages/CuentaMesaPage.tsx` |
+| `/r/[slug]/mesa/[code]/dividir` | `src/features/comensal/pages/DividirCuentaMesaPage.tsx` |
+| `/r/[slug]/mesa/[code]/menu` | `src/features/comensal/pages/MenuMesaPage.tsx` |
+| `/r/[slug]/mesa/[code]/pagar` | `src/features/comensal/pages/PagarMesaPage.tsx` |
+| `/r/[slug]/mesa/[code]` | `src/features/comensal/pages/EntradaMesaPage.tsx` |
+| `/r/[slug]/mesa/[code]/pedido` | `src/features/comensal/pages/EstadoPedidoMesaPage.tsx` |
+| `/r/[slug]/mesa/[code]/platos/[id]` | `src/features/comensal/pages/PlatoDetallePage.tsx` |
+| `/r/[slug]/mesa/[code]/resena` | `src/features/comensal/pages/ResenaMesaPage.tsx` |
+| `/recuperar` | `src/features/comensal/pages/RecuperarPage.tsx` |
+| `/registro` | `src/features/comensal/pages/RegistroPage.tsx` |
+| `/restablecer` | `src/features/comensal/pages/RestablecerPage.tsx` |
+| `/como-funciona` | `src/features/publico/pages/ComoFuncionaPage.tsx` |
+| `/contacto` | `src/features/publico/pages/ContactoPage.tsx` |
+| `/demo/solicitar` | `src/features/publico/pages/SolicitarDemoPage.tsx` |
+| `/legal/cookies` | `src/features/publico/pages/LegalCookiesPage.tsx` |
+| `/legal/privacidad` | `src/features/publico/pages/LegalPrivacidadPage.tsx` |
+| `/legal/terminos` | `src/features/publico/pages/LegalTerminosPage.tsx` |
+| `/nosotros` | `src/features/publico/pages/NosotrosPage.tsx` |
+| `/` | `src/features/publico/pages/InicioPublicoPage.tsx` |
+| `/para-restaurantes` | `src/features/publico/pages/ParaRestaurantesPage.tsx` |
+| `/planes` | `src/features/publico/pages/PlanesPage.tsx` |
+| `/preguntas-frecuentes` | `src/features/publico/pages/PreguntasFrecuentesPage.tsx` |
+| `/r/[slug]` | `src/features/publico/pages/RestaurantePage.tsx` |
+| `/restaurantes` | `src/features/publico/pages/RestaurantesPage.tsx` |
+| `/admin/entrar` | `src/features/admin/pages/EntrarPage.tsx` |
+| `/admin/inventario` | `src/features/admin/pages/InventarioPage.tsx` |
+| `/admin/menu` | `src/features/admin/pages/MenuPage.tsx` |
+| `/admin` | `src/features/admin/pages/InicioAdminPage.tsx` |
+| `/admin/perfil` | `src/features/admin/pages/PerfilPage.tsx` |
+| `/admin/personal` | `src/features/admin/pages/PersonalPage.tsx` |
+| `/admin/recuperar` | `src/features/admin/pages/RecuperarPage.tsx` |
+| `/admin/reportes` | `src/features/admin/pages/ReportesPage.tsx` |
+| `/admin/verificar` | `src/features/admin/pages/VerificarPage.tsx` |
+| `/caja/abrir` | `src/features/caja/pages/AbrirCajaPage.tsx` |
+| `/caja/cuentas/[id]` | `src/features/caja/pages/CuentaDetallePage.tsx` |
+| `/caja/cuentas` | `src/features/caja/pages/CuentasPage.tsx` |
+| `/caja/entrar` | `src/features/caja/pages/EntrarPage.tsx` |
+| `/caja/historial` | `src/features/caja/pages/HistorialPage.tsx` |
+| `/caja` | `src/features/caja/pages/InicioCajaPage.tsx` |
+| `/caja/perfil` | `src/features/caja/pages/PerfilPage.tsx` |
+| `/caja/recuperar` | `src/features/caja/pages/RecuperarPage.tsx` |
+| `/caja/turno` | `src/features/caja/pages/TurnoPage.tsx` |
+| `/cocina/entrar` | `src/features/cocina/pages/EntrarPage.tsx` |
+| `/cocina/historial` | `src/features/cocina/pages/HistorialPage.tsx` |
+| `/cocina/menu` | `src/features/cocina/pages/MenuPage.tsx` |
+| `/cocina` | `src/features/cocina/pages/InicioCocinaPage.tsx` |
+| `/cocina/perfil` | `src/features/cocina/pages/PerfilPage.tsx` |
+| `/cocina/recuperar` | `src/features/cocina/pages/RecuperarPage.tsx` |
+| `/cocina/turno` | `src/features/cocina/pages/TurnoPage.tsx` |
+| `/mesero/entrar` | `src/features/mesero/pages/EntrarPage.tsx` |
+| `/mesero/historial` | `src/features/mesero/pages/HistorialPage.tsx` |
+| `/mesero/mesas/[id]/cobrar` | `src/features/mesero/pages/CobrarMesaPage.tsx` |
+| `/mesero/mesas/[id]/cuenta` | `src/features/mesero/pages/CuentaMesaPage.tsx` |
+| `/mesero/mesas/[id]` | `src/features/mesero/pages/MesaDetallePage.tsx` |
+| `/mesero/mesas/[id]/pedido` | `src/features/mesero/pages/PedidoMesaPage.tsx` |
+| `/mesero/mesas` | `src/features/mesero/pages/MesasPage.tsx` |
+| `/mesero` | `src/features/mesero/pages/MeseroInicioPage.tsx` |
+| `/mesero/pedidos` | `src/features/mesero/pages/PedidosPage.tsx` |
+| `/mesero/perfil` | `src/features/mesero/pages/PerfilPage.tsx` |
+| `/mesero/recuperar` | `src/features/mesero/pages/RecuperarPage.tsx` |
+| `/superadmin/entrar` | `src/features/superadmin/pages/EntrarPage.tsx` |
+| `/superadmin` | `src/features/superadmin/pages/InicioSuperadminPage.tsx` |
+| `/superadmin/recuperar` | `src/features/superadmin/pages/RecuperarPage.tsx` |
+| `/superadmin/restaurantes/[id]` | `src/features/superadmin/pages/RestauranteDetallePage.tsx` |
+| `/superadmin/restaurantes` | `src/features/superadmin/pages/RestaurantesPage.tsx` |
+| `/superadmin/solicitudes/[id]` | `src/features/superadmin/pages/SolicitudDetallePage.tsx` |
+| `/superadmin/solicitudes` | `src/features/superadmin/pages/SolicitudesPage.tsx` |
+| `/superadmin/verificar` | `src/features/superadmin/pages/VerificarPage.tsx` |
+
+El índice `/demo` solo se abre con `pnpm dev`; no forma parte del menú del producto.

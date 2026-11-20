@@ -16,7 +16,7 @@ No vamos a pedir a cada compañero que programe una API falsa antes de empezar a
 
 ## Ejemplo compartido
 
-Usamos un restaurante con slug `arepique`, mesa 1 y código de demostración `AX7K2`. Los platos y sus nombres salen de una lista de ejemplo acordada, no de cinco listas incompatibles. Los identificadores son cadenas sencillas y los precios mostrados son inventados.
+Usamos un restaurante con slug `arepique`, mesa de ejemplo 4 y código de demostración `AX7K2`. Los platos y sus nombres salen de una lista de ejemplo acordada, no de cinco listas incompatibles. Los identificadores son cadenas sencillas y los precios mostrados son inventados.
 
 Para una cuenta visual podemos mostrar consumo y partes ya calculadas. El botón de pagar puede llevar a una confirmación preparada. No vamos a capturar tarjetas ni fingir una transacción real.
 
@@ -24,7 +24,7 @@ Para una cuenta visual podemos mostrar consumo y partes ya calculadas. El botón
 
 Los archivos de CSS solo contienen estilos. Los componentes muestran datos y enlaces. Las imágenes y multimedia están en `public/media/<area>`; todo lo de `public` se considera público. No guardar credenciales ahí.
 
-Cada enlace utiliza los nombres o funciones que vamos a centralizar en `src/config/routes.ts`. Ese archivo ayuda a cambiar enlaces sin buscarlos en todas las pantallas; Next.js seguirá necesitando sus archivos de rutas.
+Los enlaces actuales utilizan las direcciones que aparecen en el mapa. Todavía no existe `src/config/routes.ts`; no hace falta crearlo para maquetar. Si después centralizamos direcciones, lo estudiaremos y coordinaremos sin cambiar el sistema de rutas de Next.js.
 
 No hacemos llamadas a una base de datos desde el navegador. En la etapa de backend decidiremos esquemas definitivos, permisos, sesiones y operaciones, y conectaremos las pantallas de una en una. Tener un frontend ordenado facilita ese trabajo, pero no lo hace automáticamente.
 

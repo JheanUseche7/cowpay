@@ -1,10 +1,10 @@
 # Cómo vamos a trabajar juntos con Git y GitHub
 
-[Volver al README](../README.md) · [Tareas y estados de Jira](jira-y-github.md).
+[Volver al README](../README.md); [Tareas y estados de Jira](jira-y-github.md).
 
 Vamos a leer esta guía en orden la primera vez. Después consultamos el apartado que corresponda: **empezar una tarea nueva**, **continuar la misma tarea** o **entregar para revisión**. No ejecutamos todos los comandos de la guía de una vez.
 
-Los ejemplos de pantallas corresponden a la base que vamos a preparar. Si todavía no está compartida o no existen esas carpetas, podemos entender el recorrido, pero no damos por instalados ni programados esos archivos. Los comandos de Git se escriben en la terminal de VS Code, dentro de la carpeta `cowpay`. Si una terminal está ocupada con `pnpm dev`, abrimos otra para Git.
+La base ya está preparada en la copia de trabajo. Antes de que los compañeros la descarguen, integramos el PR de estructura. Los ejemplos de esta guía muestran cómo trabajamos con esa base; una pantalla provisional todavía necesita su diseño. Los comandos de Git se escriben en la terminal de VS Code, dentro de la carpeta `cowpay`. Si una terminal está ocupada con `pnpm dev`, abrimos otra para Git.
 
 ## 1. Primero entendamos qué estamos compartiendo
 
@@ -312,7 +312,7 @@ Seleccionamos **los archivos concretos de nuestra tarea**, con sus rutas reales.
 
 ```powershell
 git add src/features/publico/components/PublicHeader.tsx
-git add src/features/publico/components/PublicHeader.module.css
+git add src/features/publico/styles/PublicHeader.module.css
 ```
 
 No copiamos estas rutas para una tarea del mesero o del comensal. Si Git dice que no encuentra un archivo, miramos el nombre y la ubicación en VS Code. Para seleccionar una carpeta entera tenemos que revisar primero todo su contenido.

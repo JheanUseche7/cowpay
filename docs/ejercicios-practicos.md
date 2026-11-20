@@ -1,6 +1,6 @@
 # Practiquemos antes de desarrollar nuestra parte
 
-[Volver al README](../README.md) · [Teoría y ejemplos](guia-desde-cero.md) · [Git y GitHub paso a paso](trabajo-colaborativo.md).
+[Volver al README](../README.md); [Teoría y ejemplos](guia-desde-cero.md); [Git y GitHub paso a paso](trabajo-colaborativo.md).
 
 Vamos a hacer estas prácticas en orden, sin intentar terminar todas de una vez. La idea es que podamos explicar lo que escribimos y comprobar el resultado. No vamos a exigir que aprendamos React solo leyendo: primero construimos algo pequeño y después lo utilizamos en nuestra pantalla.
 
@@ -140,13 +140,14 @@ El contenido del ejercicio estará separado:
 ```text
 src/features/practicas/oscar/
 ├── TarjetaRestaurante.tsx
-├── TarjetaRestaurante.module.css
-└── PracticaPage.tsx
+├── PracticaPage.tsx
+└── styles/
+    └── TarjetaRestaurante.module.css
 ```
 
 Los compañeros utilizan sus nombres. No editamos todos la misma página. Estas rutas son para aprender en local y no forman parte de las pantallas públicas prometidas para la entrega.
 
-Vamos a trasladar una tarjeta del HTML a `TarjetaRestaurante.tsx` y sus estilos al CSS Module. Podemos consultar el [ejemplo de pantalla y CSS](guia-desde-cero.md#6-nuestra-pantalla-vive-fuera-de-las-rutas).
+Vamos a trasladar una tarjeta del HTML a `TarjetaRestaurante.tsx` y sus estilos al CSS Module dentro de `styles/` de la práctica. Podemos consultar el [ejemplo de pantalla y CSS](guia-desde-cero.md#6-nuestra-pantalla-vive-fuera-de-las-rutas).
 
 **Cambios que debemos explicar:**
 
