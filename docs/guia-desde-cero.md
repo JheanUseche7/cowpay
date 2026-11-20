@@ -4,7 +4,7 @@ Esta guía es para quienes ya hemos practicado HTML y CSS y estamos empezando co
 
 [Volver al inicio del proyecto](../README.md). Antes de practicar, seguimos la instalación del README y abrimos la aplicación.
 
-Los ejemplos son para que los escribamos nosotros. Este documento no instala dependencias ni crea la aplicación. Primero preparo la base una sola vez y la compartimos; después cada uno hace su pantalla en su rama.
+La base ya está preparada en la copia de trabajo. Los ejemplos nos sirven para entenderla y practicar; después cada uno desarrolla su pantalla en su rama. Para descargarla esperamos que el PR de estructura esté integrado en main.
 
 ## Nuestro recorrido
 
@@ -103,7 +103,7 @@ Si no encontramos `package.json`, comprobamos la carpeta con `Get-Location` y su
 
 ## 5. Nuestra primera página de React
 
-Next.js reconoce `src/app/page.tsx` como la página de inicio. Un ejemplo pequeño:
+En nuestra base, Next.js reconoce `src/app/(publico)/page.tsx` como la ruta de inicio. El grupo `(publico)` no forma parte de la URL. El componente de pantalla está en `src/features/publico/pages/InicioPublicoPage.tsx`. Un ejemplo pequeño:
 
 ```tsx
 export default function HomePage() {
@@ -153,9 +153,11 @@ Un error rojo no significa que perdimos el proyecto: leemos el archivo y la lín
 Para que no tengamos que repartir archivos de rutas entre todos, vamos a construir las pantallas en una carpeta propia. Usemos el ejemplo del mesero:
 
 ```text
-src/features/mesero/pages/
-├── MesasPage.tsx
-└── MesasPage.module.css
+src/features/mesero/
+├── pages/
+│   └── MesasPage.tsx
+└── styles/
+    └── MesasPage.module.css
 ```
 
 `features` significa áreas o funcionalidades. Podríamos llamarla de otra manera, pero acordamos este nombre. **Next.js no convierte esta carpeta en una URL.** `pages` dentro de `features` es una carpeta normal nuestra, no el Pages Router de Next.js.
@@ -163,7 +165,7 @@ src/features/mesero/pages/
 En `MesasPage.tsx`:
 
 ```tsx
-import styles from './MesasPage.module.css';
+import styles from '../styles/MesasPage.module.css';
 
 export function MesasPage() {
   return (
@@ -172,14 +174,14 @@ export function MesasPage() {
       <p>Estas son las mesas de nuestro ejemplo.</p>
       <article className={styles.card}>
         <h2>Mesa 1</h2>
-        <p>Ocupada · 3 comensales</p>
+        <p>Ocupada; 3 comensales</p>
       </article>
     </main>
   );
 }
 ```
 
-En `MesasPage.module.css`:
+En `src/features/mesero/styles/MesasPage.module.css`:
 
 ```css
 .page {
@@ -416,7 +418,7 @@ Next.js tampoco es programar sin framework “desde cero”: ya nos resuelve inf
 
 ## 13. Una ruta administrativa no es una contraseña
 
-Los nombres acordados son `/gestion-restaurante` y `/operacion-cowpay`. No los enlazamos desde la navegación pública y usaremos `noindex` para pedir que no aparezcan en buscadores. Esos nombres no son secretos: se pueden descubrir en el código o en las peticiones.
+Los nombres acordados son `/admin` y `/superadmin`. No los enlazamos desde la navegación pública y usaremos `noindex` para pedir que no aparezcan en buscadores. Esos nombres no son secretos: se pueden descubrir en el código o en las peticiones.
 
 En el frontend actual solo mostramos pantallas. Cuando implementemos el backend, el acceso dependerá de la sesión y los permisos comprobados en servidor. Cambiar `/admin` por un nombre largo no resuelve esa parte.
 
@@ -426,7 +428,7 @@ Elegimos una subtarea pequeña, actualizamos nuestra rama y trabajamos en nuestr
 
 - Ruta que voy a preparar: `src/app/mesero/mesas/page.tsx`.
 - Pantalla de Samuel: `src/features/mesero/pages/MesasPage.tsx`.
-- Sus estilos: `src/features/mesero/pages/MesasPage.module.css`.
+- Sus estilos: `src/features/mesero/styles/MesasPage.module.css`.
 - Sus recursos: `public/media/mesero/`.
 
 Al terminar, abrimos la ruta, miramos celular y escritorio y comprobamos sus enlaces. Ejecutamos `pnpm build` y `pnpm lint` si ese script está preparado. Esto detecta algunos problemas de código; no comprueba que la pantalla sea igual a Figma.

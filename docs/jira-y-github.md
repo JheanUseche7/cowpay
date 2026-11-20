@@ -6,9 +6,9 @@
 
 **Jira nos sirve para organizar el trabajo:** qué falta, quién lo está haciendo, cuándo lo revisamos y qué evidencia dejamos. **GitHub guarda nuestro código y los Pull Requests.** La integración permite relacionarlos; no revisa por sí sola si una pantalla quedó bien.
 
-Nuestro sprint es **CowPay · Frontend · 18 nov – 4 dic 2026**. Ya está activo en Jira, con inicio planificado el 18 a las 13:00 y cierre el 4 a las 17:45, hora de Colombia. Tenemos 23 tareas principales de desarrollo y seguimiento dentro. El ensayo del 3, preparación final del 4 y entrega del 7 se siguen aparte en KAN-24.
+Nuestro sprint es **CowPay; Frontend; 21 nov – 4 dic 2026**. Ya está activo en Jira, con inicio reprogramado el 21 a las 13:00 y cierre el 4 a las 17:45, hora de Colombia. Tenemos 23 tareas principales de desarrollo y seguimiento dentro. El ensayo del 3, preparación final del 4 y entrega del 7 se siguen aparte en KAN-24.
 
-Las primeras fechas son puntos de revisión de una parte pequeña, no la exigencia de terminar toda el área en tres días. Tenemos hasta el 1 para integrar las pantallas acordadas y del 2 al 4 para corregir como equipo. El jueves 3 ensayamos de 17:00 a 17:30 en el SENA, el viernes 4 dejamos correcciones e informe antes de las 18:00 y el lunes 7 entregamos. No cuento con el fin de semana para trabajar. Si una estimación no coincide con nuestro avance, la ajustamos en la reunión y dejamos el motivo escrito.
+Las primeras fechas son puntos de revisión de una parte pequeña, no la exigencia de terminar toda el área en tres días. Las entregas parciales se revisan el 26 y el 30; el 3 debemos poder recorrer lo esencial, y el 4 cerramos integración y correcciones. El inicio del periodo es el sábado 21, con primer apoyo presencial el lunes 23. No convertimos el fin de semana en trabajo obligatorio. El jueves 3 ensayamos de 17:00 a 17:30 en el SENA, el viernes 4 dejamos correcciones e informe antes de las 18:00 y el lunes 7 entregamos. No cuento con el fin de semana para trabajar. Si una estimación no coincide con nuestro avance, la ajustamos en la reunión y dejamos el motivo escrito.
 
 ## Qué significan las columnas
 
@@ -29,7 +29,7 @@ Para las reuniones y los informes no hay PR de una pantalla: dejamos el acta o i
 
 Un **sprint** es el periodo en que acordamos avanzar estas tareas; no significa que entreguemos todo en un único PR al final. Vamos entregando subtareas pequeñas durante el periodo.
 
-1. Entramos al [tablero de CowPay](https://rojasricosworkspace-65f8ece0.atlassian.net/jira/software/projects/KAN/boards/1) y seleccionamos nuestro sprint activo **CowPay · Frontend · 18 nov – 4 dic 2026**, si aparece un selector.
+1. Entramos al [tablero de CowPay](https://rojasricosworkspace-65f8ece0.atlassian.net/jira/software/projects/KAN/boards/1) y seleccionamos nuestro sprint activo **CowPay; Frontend; 21 nov – 4 dic 2026**, si aparece un selector.
 2. Filtramos por responsable para ver lo que le toca a cada uno. El responsable indica quién se encarga, no demuestra por sí solo quién escribió el código.
 3. Abrimos una tarea, por ejemplo [KAN-3, inicio público](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-3), para ver sus subtareas. Si el tablero solo muestra la tarjeta principal, las revisamos dentro de ella.
 4. En cada subtarea dejamos el PR, las capturas, la ruta y el comentario de revisión. El historial de actividad registra los cambios de estado; el PR y sus commits muestran la contribución de código. Si hubo ayuda, la anotamos.
@@ -110,7 +110,7 @@ Para terminar, necesitamos que el asistente complete ese paso y muestre la conex
 
 ## Seguimiento semanal
 
-Los martes 24 de noviembre y 1 de diciembre revisamos el trabajo de 15:30 a 16:00. Los viernes 20 y 27 de noviembre y 4 de diciembre hacemos el registro semanal de 17:00 a 17:15. Todo es presencial en el SENA. Mi apoyo es de 13:00 a 18:00 los lunes, martes, jueves y viernes; miércoles tenemos inglés. No atiendo el proyecto después de clase ni fines de semana. Voy a preparar el informe con el modelo de [seguimiento semanal](seguimiento-semanal.md). Nuestro informe es evidencia del trabajo que revisamos; no un porcentaje inventado a partir del número de tarjetas.
+Los martes 24 de noviembre y 1 de diciembre revisamos el trabajo de 15:30 a 16:00. Los viernes 27 de noviembre y 4 de diciembre hacemos el registro semanal de 17:00 a 17:15. Todo es presencial en el SENA. Mi apoyo es de 13:00 a 18:00 los lunes, martes, jueves y viernes; miércoles tenemos inglés. No atiendo el proyecto después de clase ni fines de semana. Voy a preparar el informe con el modelo de [seguimiento semanal](seguimiento-semanal.md). Nuestro informe es evidencia del trabajo que revisamos; no un porcentaje inventado a partir del número de tarjetas.
 
 ## Referencias
 

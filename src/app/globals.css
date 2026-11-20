@@ -6,3 +6,11 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+:root {
+  --color-verde-para-los-botones: #2a7d2a;
+  --color-de-fondo-para-el-footer-publico: #111114;
+  --color-de-fondo-para-contenido-publico: #f4f5f7;
+  --color-de-hover-nav-publico: #2a7d2a; /*SE REPITE*/
+  --color-de-nav-publico: #60606a;
+}

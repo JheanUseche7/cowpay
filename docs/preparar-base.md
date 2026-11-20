@@ -1,10 +1,10 @@
 # Preparar nuestra base dentro de cowpay
 
-[Volver al README](../README.md) · Después seguimos la [guía teórica y práctica](guia-desde-cero.md).
+[Volver al README](../README.md); Después seguimos la [guía teórica y práctica](guia-desde-cero.md).
 
-Esta parte la hago yo, Oscar, **una sola vez**. Vamos a instalar Next.js manualmente dentro de nuestra carpeta actual. Los demás descargamos esa base cuando esté compartida y ejecutamos `pnpm install` y `pnpm dev`, como explica el README.
+Esta parte la preparé yo, Oscar, **una sola vez**. La base ya está creada; este documento explica cómo la construimos. Para trabajar en ella seguimos la descarga e instalación del README. Vamos a instalar Next.js manualmente dentro de nuestra carpeta actual. Los demás descargamos esa base cuando esté compartida y ejecutamos `pnpm install` y `pnpm dev`, como explica el README.
 
-Esta es una guía para escribir los archivos y ejecutar los comandos nosotros. Documentarlos aquí no los instala ni significa que la aplicación esté programada.
+Esta guía conserva el proceso de aprendizaje. La aplicación inicial ya existe; no repetimos sus pasos de creación sobre la base descargada.
 
 ## 1. Antes de empezar
 
@@ -32,7 +32,7 @@ Aquí vamos a seguir un único camino: **la instalación manual que Next.js tamb
 
 ## 3. Crear la lista de dependencias
 
-Este paso corresponde al estado actual del repositorio: todavía no hay `package.json`. Si ya existe porque la base se preparó, no repetimos la inicialización; seguimos la instalación normal del README.
+Este paso explica cómo empezamos cuando todavía no había `package.json`. Si ya existe porque la base se preparó, no repetimos la inicialización; seguimos la instalación normal del README.
 
 ```powershell
 pnpm init
@@ -131,7 +131,7 @@ body {
 }
 ```
 
-Es CSS normal. Empezamos con una base mínima; después añadimos los colores, tipografía y tamaños acordados desde Figma. Los estilos específicos de cada pantalla irán en su propio `.module.css`, no todos aquí.
+Es CSS normal. Empezamos con una base mínima; después añadimos los colores, tipografía y tamaños acordados desde Figma. Los estilos específicos van en `src/features/<area>/styles`, en archivos `.module.css`.
 
 ## 6. Abrir la aplicación y preparar las importaciones
 
@@ -145,7 +145,7 @@ Next.js detecta los archivos TypeScript y prepara su configuración. Cuando term
 
 Aparecerán `tsconfig.json`, `next-env.d.ts` y la carpeta de resultados `.next/`. No son otra aplicación. `tsconfig.json` configura TypeScript; `next-env.d.ts` lo genera Next.js y no lo editamos a mano. `.next/` se vuelve a generar al ejecutar Next.js.
 
-Nuestros ejemplos usan `@/` para referirse a `src/`, evitando importaciones largas. Abrimos `tsconfig.json` y **dentro del objeto `compilerOptions`**, conservando las opciones existentes, añadimos o ajustamos:
+Esta sección muestra una mejora opcional. La base actual usa rutas relativas y todavía no tiene configurado `@/`. No necesitamos cambiarlo para empezar. Podemos usar `@/` para referirnos a `src/`, evitando importaciones largas. Abrimos `tsconfig.json` y **dentro del objeto `compilerOptions`**, conservando las opciones existentes, añadimos o ajustamos:
 
 ```json
 "paths": {

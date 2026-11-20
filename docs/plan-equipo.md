@@ -10,91 +10,91 @@ Voy a completar primero el inventario y los bocetos sencillos que faltan del com
 
 ## Fechas y seguimiento
 
-El correo de la instructora pide trabajar del **18 de noviembre al 4 de diciembre de 2026**, agregar tareas y subtareas con responsables y puntos y registrar reuniones al final de cada semana. La entrega final es el **7 de diciembre**.
+Reprogramación del 20 de noviembre: el trabajo pendiente empieza a contar desde el 21 de noviembre de 2026. Es sábado; no exigimos trabajo de fin de semana ni apoyo mío fuera del SENA. El lunes 23 compartimos y comprobamos la base. Conservamos el cierre del 4 de diciembre y la entrega oficial del 7.
 
-Voy a revisar avances con el equipo el **20 y 27 de noviembre y el 4 de diciembre**. La revisión breve será presencial en el SENA de 17:00 a 17:15. También hacemos seguimiento los martes 24 de noviembre y 1 de diciembre, de 15:30 a 16:00. Además del acta, voy a preparar un informe para presentar a la instructora, con lo que se hizo, dificultades, recomendaciones y próximos compromisos. No vamos a registrar reuniones que todavía no ocurrieron.
+La primera entrega parcial se revisa el jueves 26. Las siguientes son el 30 de noviembre y el jueves 3 de diciembre. Integramos avances pequeños desde el principio. Cada fecha de la tabla corresponde al objetivo de esa tarea; no son cuatro entregas completas simultáneas de todo el Figma.
 
-El 1 de diciembre es nuestro objetivo interno para recibir las pantallas. Integramos y ensayamos del 2 al 4: ensayo el jueves 3, 17:00–17:30, y revisión/cierre el viernes 4. No contamos conmigo el 5 ni el 6, porque no trabajo en el proyecto fuera del SENA.
+Seguimientos presenciales: martes 24 y 1, 15:30–16:00; viernes 27 y 4, 17:00–17:15. El registro del 20 se conserva como preparación técnica, sin inventar una reunión o asistencia. El lunes 23 revisamos arranque y bloqueos. El jueves 3 ensayamos 17:00–17:30. No cuento con los fines de semana para trabajar.
 
 ## Estado real de Jira
 
 En **CowPay, proyecto KAN**, ya tenemos **24 tareas y 69 subtareas**. Los cinco ya aparecen como asignables y el trabajo está asignado según el reparto. El registro de claves está también en `backlog-jira.json`.
 
-El [tablero existente](https://rojasricosworkspace-65f8ece0.atlassian.net/jira/software/projects/KAN/boards/1) tiene To Do, In Progress, In Review y Done. Ya activamos Backlog, Sprints y estimación por puntos. El sprint **CowPay · Frontend · 18 nov – 4 dic 2026** está activo: inicio planificado el 18 a las 13:00 y cierre el 4 a las 17:45, hora de Colombia.
+El [tablero existente](https://rojasricosworkspace-65f8ece0.atlassian.net/jira/software/projects/KAN/boards/1) tiene To Do, In Progress, In Review y Done. Ya activamos Backlog, Sprints y estimación por puntos. El sprint **CowPay; Frontend; 21 nov – 4 dic 2026** está activo: inicio reprogramado el 21 a las 13:00 y cierre el 4 a las 17:45, hora de Colombia.
 
 Las 23 tareas de desarrollo y seguimiento están dentro del sprint. KAN-24 y sus tres subtareas corresponden al ensayo del 3, preparación final del 4 y entrega del 7 de diciembre y quedan fuera de ese sprint. Los puntos ya están en el campo de estimación de las tareas principales; en subtareas mantenemos el desglose en su descripción. No sumamos ambas capas para calcular esfuerzo. Las fechas de cada tarea son objetivos de revisión y entrega parcial; las revisamos con nuestro avance real.
 
 Todas las tareas y subtareas están asignadas a nuestras cinco cuentas. La guía [Jira y GitHub](jira-y-github.md) explica cómo dejamos evidencia y cambiamos estados.
 
-No hemos empezado ni completado ninguna tarea por el simple hecho de crearla en Jira. El código lo vamos a escribir nosotros.
+La base técnica ya está escrita y compilada. Las actividades de base reflejan avance en curso; la publicación por PR y la prueba con un compañero siguen pendientes. No cerramos las interfaces de cada área por haber generado su página provisional.
 
 ## Reparto resumido
 
 | Persona | Área | Carpetas propias |
 | --- | --- | --- |
 | Yo, Oscar Rojas | Base, comensal e integración | `src/features/comensal`, capa de rutas y archivos comunes |
-| Santiago Diaz Palma | Administrador y Central | `src/features/admin`, `src/features/central` |
+| Santiago Diaz Palma | Administrador y Superadmin | `src/features/admin`, `src/features/superadmin` |
 | Santiago Evanz | Cocina y caja | `src/features/cocina`, `src/features/caja` |
 | Jhean Useche | Sitio público | `src/features/publico` |
 | Samuel Correa | Mesero | `src/features/mesero` |
 
-El CSS va al lado del componente en `.module.css`; los recursos van en `public/media/<area>`. El [mapa de rutas](rutas.md) concreta las páginas. Las rutas las preparo yo; los compañeros trabajan principalmente en sus pantallas.
+El CSS va en `src/features/<area>/styles`, en archivos `.module.css`; los recursos van en `public/media/<area>`. El [mapa de rutas](rutas.md) concreta las páginas. Las rutas las preparo yo; los compañeros trabajan principalmente en sus pantallas.
 
 ## Tareas creadas
 
 | Referencia | Jira | Qué vamos a hacer | Responsable | Fecha objetivo | Puntos |
 | --- | --- | --- | --- | --- | --- |
-| BASE-01 | [KAN-1](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-1) | Preparar manualmente la aplicación y las rutas | Oscar Rojas | 2026-11-19 | 5 |
-| BASE-02 | [KAN-2](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-2) | Dejar componentes mínimos y datos compartidos | Oscar Rojas | 2026-11-20 | 5 |
-| PUB-01 | [KAN-3](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-3) | Construir inicio y navegación pública | Jehan Useche | 2026-11-23 | 5 |
-| PUB-02 | [KAN-4](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-4) | Construir directorio y ficha de restaurante | Jehan Useche | 2026-11-27 | 5 |
-| PUB-03 | [KAN-5](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-5) | Completar páginas informativas esenciales | Jehan Useche | 2026-12-01 | 5 |
+| BASE-01 | [KAN-1](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-1) | Preparar manualmente la aplicación y las rutas | Oscar Rojas | 2026-11-23 | 5 |
+| BASE-02 | [KAN-2](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-2) | Dejar componentes mínimos y datos compartidos | Oscar Rojas | 2026-11-24 | 5 |
+| PUB-01 | [KAN-3](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-3) | Construir inicio y navegación pública | Jehan Useche | 2026-11-26 | 5 |
+| PUB-02 | [KAN-4](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-4) | Construir directorio y ficha de restaurante | Jehan Useche | 2026-11-30 | 5 |
+| PUB-03 | [KAN-5](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-5) | Completar páginas informativas esenciales | Jehan Useche | 2026-12-03 | 5 |
 | COM-00 | [KAN-6](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-6) | Completar bocetos de las pantallas faltantes del comensal | Oscar Rojas | 2026-11-24 | 5 |
-| COM-01 | [KAN-7](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-7) | Construir entrada de mesa, menú y detalle | Oscar Rojas | 2026-11-24 | 5 |
-| COM-02 | [KAN-8](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-8) | Maquetar carrito y seguimiento visual del pedido | Oscar Rojas | 2026-11-27 | 5 |
-| COM-03 | [KAN-9](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-9) | Maquetar cuenta, división y pago visual | Oscar Rojas | 2026-12-01 | 5 |
-| MES-01 | [KAN-10](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-10) | Construir acceso, panel y listado de mesas | Samuel Correa | 2026-11-23 | 5 |
-| MES-02 | [KAN-11](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-11) | Construir registro y seguimiento de pedidos | Samuel Correa | 2026-11-27 | 5 |
-| MES-03 | [KAN-12](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-12) | Maquetar cuenta, efectivo y cierre de mesa | Samuel Correa | 2026-12-01 | 5 |
-| COC-01 | [KAN-13](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-13) | Construir tablero de cocina | Santiago Evanz | 2026-11-24 | 5 |
+| COM-01 | [KAN-7](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-7) | Construir entrada de mesa, menú y detalle | Oscar Rojas | 2026-11-27 | 5 |
+| COM-02 | [KAN-8](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-8) | Maquetar carrito y seguimiento visual del pedido | Oscar Rojas | 2026-12-03 | 5 |
+| COM-03 | [KAN-9](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-9) | Maquetar cuenta, división y pago visual | Oscar Rojas | 2026-12-03 | 5 |
+| MES-01 | [KAN-10](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-10) | Construir acceso, panel y listado de mesas | Samuel Correa | 2026-11-26 | 5 |
+| MES-02 | [KAN-11](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-11) | Construir registro y seguimiento de pedidos | Samuel Correa | 2026-11-30 | 5 |
+| MES-03 | [KAN-12](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-12) | Maquetar cuenta, efectivo y cierre de mesa | Samuel Correa | 2026-12-03 | 5 |
+| COC-01 | [KAN-13](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-13) | Construir tablero de cocina | Santiago Evanz | 2026-11-27 | 5 |
 | CAJ-01 | [KAN-14](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-14) | Construir apertura de caja y cuentas abiertas | Santiago Evanz | 2026-11-27 | 5 |
-| CAJ-02 | [KAN-15](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-15) | Completar historial y resumen de turno | Santiago Evanz | 2026-12-01 | 5 |
-| ADM-01 | [KAN-16](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-16) | Construir acceso y panel del restaurante | Santiago Diaz Palma | 2026-11-23 | 4 |
-| ADM-02 | [KAN-17](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-17) | Construir menú e inventario | Santiago Diaz Palma | 2026-11-27 | 5 |
-| ADM-03 | [KAN-18](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-18) | Construir personal y Central mínimo | Santiago Diaz Palma | 2026-12-01 | 5 |
-| INT-01 | [KAN-19](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-19) | Integrar navegación y datos de las cinco áreas | Oscar Rojas | 2026-12-03 | 5 |
+| CAJ-02 | [KAN-15](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-15) | Completar historial y resumen de turno | Santiago Evanz | 2026-12-03 | 5 |
+| ADM-01 | [KAN-16](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-16) | Construir acceso y panel del restaurante | Santiago Diaz Palma | 2026-11-26 | 4 |
+| ADM-02 | [KAN-17](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-17) | Construir menú e inventario | Santiago Diaz Palma | 2026-11-30 | 5 |
+| ADM-03 | [KAN-18](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-18) | Construir personal y Superadmin mínimo | Santiago Diaz Palma | 2026-12-03 | 5 |
+| INT-01 | [KAN-19](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-19) | Integrar navegación y datos de las cinco áreas | Oscar Rojas | 2026-12-04 | 5 |
 | INT-02 | [KAN-20](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-20) | Preparar privacidad administrativa y prueba final | Oscar Rojas | 2026-12-04 | 4 |
-| REV-01 | [KAN-21](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-21) | Reunión semanal y acta del 20 de noviembre | Oscar Rojas | 2026-11-20 | 2 |
+| REV-01 | [KAN-21](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-21) | Revisar preparación y arranque del equipo | Oscar Rojas | 2026-11-23 | 2 |
 | REV-02 | [KAN-22](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-22) | Reunión semanal y acta del 27 de noviembre | Oscar Rojas | 2026-11-27 | 2 |
 | REV-03 | [KAN-23](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-23) | Reunión de cierre del sprint el 4 de diciembre | Oscar Rojas | 2026-12-04 | 2 |
 | ENT-01 | [KAN-24](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-24) | Preparar demostración y entrega del 7 de diciembre | Oscar Rojas | 2026-12-07 | 3 |
 
 ## Subtareas por trabajo
 
-### BASE-01 · Preparar manualmente la aplicación y las rutas
+### BASE-01; Preparar manualmente la aplicación y las rutas
 
-Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-19.
+Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-23.
 
 Carpetas: `src/app y componentes compartidos`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1).
 
 | Jira | Subtarea | Puntos |
 | --- | --- | --- |
 | [KAN-25](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-25) | Instalar una sola base Next.js con pnpm y CSS Modules, conservando README y docs | 2 |
-| [KAN-26](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-26) | Crear archivos de rutas que muestran las pantallas de cada área y centralizar enlaces | 2 |
+| [KAN-26](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-26) | Crear rutas y enlaces de ejemplo para las pantallas de cada área | 2 |
 | [KAN-27](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-27) | Comprobar arranque y compilación; subir PR de base sin programar backend | 1 |
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### BASE-02 · Dejar componentes mínimos y datos compartidos
+### BASE-02; Dejar componentes mínimos y datos compartidos
 
-Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-20.
+Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-24.
 
 Carpetas: `src/app y componentes compartidos`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1).
 
 | Jira | Subtarea | Puntos |
 | --- | --- | --- |
 | [KAN-28](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-28) | Preparar colores y tipografía compartidos y ejemplos de botón, campo y tarjeta | 2 |
-| [KAN-29](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-29) | Dejar carpeta por persona, CSS al lado de componentes y recursos por área | 2 |
+| [KAN-29](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-29) | Dejar carpeta por persona, CSS en styles por área y recursos por área | 2 |
 | [KAN-30](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-30) | Explicar al equipo un ejemplo pequeño de JSX, CSS Modules y primer PR | 1 |
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
@@ -103,13 +103,13 @@ Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escr
 
 Useche tiene varias páginas y secciones extensas. El [mapa de rutas](rutas.md) distingue las direcciones propuestas de las variantes del Figma. No interpretamos sus tres tareas principales como tres pantallas pequeñas ni damos por equilibrada la carga por tener el mismo número de puntos que otra área.
 
-La entrega se hace por subtareas: header y presentación principal (KAN-31), secciones restantes y footer (KAN-32), navegación y revisión visual (KAN-33), y después directorio/ficha e informativas. Una subtarea extensa puede tener varios PR pequeños. No esperamos a terminar todo el sitio para pedir revisión. El viernes 20 revisamos el tamaño real y acordamos ayuda o ajuste de alcance; no reasignamos una parte sin coordinar sus archivos.
+La entrega se hace por subtareas: header y presentación principal (KAN-31), secciones restantes y footer (KAN-32), navegación y revisión visual (KAN-33), y después directorio/ficha e informativas. Una subtarea extensa puede tener varios PR pequeños. No esperamos a terminar todo el sitio para pedir revisión. En el arranque del 23 y la revisión del 27 revisamos el tamaño real y acordamos ayuda o ajuste de alcance; no reasignamos una parte sin coordinar sus archivos.
 
 Si Samuel puede ayudar, elegimos una pieza concreta, por ejemplo el footer: dejamos constancia en Jira, asignamos esa subtarea al colaborador y mantenemos a Useche coordinando el área. Si la subtarea agrupa más piezas, primero la dividimos para que el responsable y la evidencia sean claros. El ejemplo de ramas y archivos separados está en el [README](../README.md#13-reglas-para-no-estorbarnos).
 
-### PUB-01 · Construir inicio y navegación pública
+### PUB-01; Construir inicio y navegación pública
 
-Responsable: Jehan Useche. Fecha objetivo: 2026-11-23.
+Responsable: Jehan Useche. Fecha objetivo: 2026-11-26.
 
 Carpetas: `src/features/publico y public/media/publico`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=653-500).
 
@@ -121,9 +121,9 @@ Carpetas: `src/features/publico y public/media/publico`. [Diseño de referencia]
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### PUB-02 · Construir directorio y ficha de restaurante
+### PUB-02; Construir directorio y ficha de restaurante
 
-Responsable: Jehan Useche. Fecha objetivo: 2026-11-27.
+Responsable: Jehan Useche. Fecha objetivo: 2026-11-30.
 
 Carpetas: `src/features/publico y public/media/publico`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=312-1473).
 
@@ -135,9 +135,9 @@ Carpetas: `src/features/publico y public/media/publico`. [Diseño de referencia]
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### PUB-03 · Completar páginas informativas esenciales
+### PUB-03; Completar páginas informativas esenciales
 
-Responsable: Jehan Useche. Fecha objetivo: 2026-12-01.
+Responsable: Jehan Useche. Fecha objetivo: 2026-12-03.
 
 Carpetas: `src/features/publico y public/media/publico`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=313-1999).
 
@@ -149,7 +149,7 @@ Carpetas: `src/features/publico y public/media/publico`. [Diseño de referencia]
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### COM-00 · Completar bocetos de las pantallas faltantes del comensal
+### COM-00; Completar bocetos de las pantallas faltantes del comensal
 
 Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-24.
 
@@ -163,9 +163,9 @@ Carpetas: `Figma, docs y src/features/comensal después de acordar bocetos`. [Di
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### COM-01 · Construir entrada de mesa, menú y detalle
+### COM-01; Construir entrada de mesa, menú y detalle
 
-Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-24.
+Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-27.
 
 Carpetas: `src/features/comensal y public/media/comensal`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5417).
 
@@ -177,9 +177,9 @@ Carpetas: `src/features/comensal y public/media/comensal`. [Diseño de referenci
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### COM-02 · Maquetar carrito y seguimiento visual del pedido
+### COM-02; Maquetar carrito y seguimiento visual del pedido
 
-Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-27.
+Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-12-03.
 
 Carpetas: `src/features/comensal y public/media/comensal`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5661).
 
@@ -191,9 +191,9 @@ Carpetas: `src/features/comensal y public/media/comensal`. [Diseño de referenci
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### COM-03 · Maquetar cuenta, división y pago visual
+### COM-03; Maquetar cuenta, división y pago visual
 
-Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-12-01.
+Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-12-03.
 
 Carpetas: `src/features/comensal y public/media/comensal`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5879).
 
@@ -205,9 +205,9 @@ Carpetas: `src/features/comensal y public/media/comensal`. [Diseño de referenci
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### MES-01 · Construir acceso, panel y listado de mesas
+### MES-01; Construir acceso, panel y listado de mesas
 
-Responsable: Samuel Correa. Fecha objetivo: 2026-11-23.
+Responsable: Samuel Correa. Fecha objetivo: 2026-11-26.
 
 Carpetas: `src/features/mesero y public/media/mesero`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-61).
 
@@ -219,9 +219,9 @@ Carpetas: `src/features/mesero y public/media/mesero`. [Diseño de referencia](h
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### MES-02 · Construir registro y seguimiento de pedidos
+### MES-02; Construir registro y seguimiento de pedidos
 
-Responsable: Samuel Correa. Fecha objetivo: 2026-11-27.
+Responsable: Samuel Correa. Fecha objetivo: 2026-11-30.
 
 Carpetas: `src/features/mesero y public/media/mesero`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-916).
 
@@ -233,9 +233,9 @@ Carpetas: `src/features/mesero y public/media/mesero`. [Diseño de referencia](h
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### MES-03 · Maquetar cuenta, efectivo y cierre de mesa
+### MES-03; Maquetar cuenta, efectivo y cierre de mesa
 
-Responsable: Samuel Correa. Fecha objetivo: 2026-12-01.
+Responsable: Samuel Correa. Fecha objetivo: 2026-12-03.
 
 Carpetas: `src/features/mesero y public/media/mesero`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-1318).
 
@@ -247,9 +247,9 @@ Carpetas: `src/features/mesero y public/media/mesero`. [Diseño de referencia](h
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### COC-01 · Construir tablero de cocina
+### COC-01; Construir tablero de cocina
 
-Responsable: Santiago Evanz. Fecha objetivo: 2026-11-24.
+Responsable: Santiago Evanz. Fecha objetivo: 2026-11-27.
 
 Carpetas: `src/features/cocina y public/media/cocina`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-4098).
 
@@ -261,7 +261,7 @@ Carpetas: `src/features/cocina y public/media/cocina`. [Diseño de referencia](h
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### CAJ-01 · Construir apertura de caja y cuentas abiertas
+### CAJ-01; Construir apertura de caja y cuentas abiertas
 
 Responsable: Santiago Evanz. Fecha objetivo: 2026-11-27.
 
@@ -275,9 +275,9 @@ Carpetas: `src/features/caja y public/media/caja`. [Diseño de referencia](https
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### CAJ-02 · Completar historial y resumen de turno
+### CAJ-02; Completar historial y resumen de turno
 
-Responsable: Santiago Evanz. Fecha objetivo: 2026-12-01.
+Responsable: Santiago Evanz. Fecha objetivo: 2026-12-03.
 
 Carpetas: `src/features/caja y public/media/caja`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=460-510).
 
@@ -289,11 +289,11 @@ Carpetas: `src/features/caja y public/media/caja`. [Diseño de referencia](https
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### ADM-01 · Construir acceso y panel del restaurante
+### ADM-01; Construir acceso y panel del restaurante
 
-Responsable: Santiago Diaz Palma. Fecha objetivo: 2026-11-23.
+Responsable: Santiago Diaz Palma. Fecha objetivo: 2026-11-26.
 
-Carpetas: `src/features/admin, src/features/central y sus recursos en public/media`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-2344).
+Carpetas: `src/features/admin, src/features/superadmin y sus recursos en public/media`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-2344).
 
 | Jira | Subtarea | Puntos |
 | --- | --- | --- |
@@ -303,11 +303,11 @@ Carpetas: `src/features/admin, src/features/central y sus recursos en public/med
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### ADM-02 · Construir menú e inventario
+### ADM-02; Construir menú e inventario
 
-Responsable: Santiago Diaz Palma. Fecha objetivo: 2026-11-27.
+Responsable: Santiago Diaz Palma. Fecha objetivo: 2026-11-30.
 
-Carpetas: `src/features/admin, src/features/central y sus recursos en public/media`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-3079).
+Carpetas: `src/features/admin, src/features/superadmin y sus recursos en public/media`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-3079).
 
 | Jira | Subtarea | Puntos |
 | --- | --- | --- |
@@ -317,23 +317,23 @@ Carpetas: `src/features/admin, src/features/central y sus recursos en public/med
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### ADM-03 · Construir personal y Central mínimo
+### ADM-03; Construir personal y Superadmin mínimo
 
-Responsable: Santiago Diaz Palma. Fecha objetivo: 2026-12-01.
+Responsable: Santiago Diaz Palma. Fecha objetivo: 2026-12-03.
 
-Carpetas: `src/features/admin, src/features/central y sus recursos en public/media`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=745-39170).
+Carpetas: `src/features/admin, src/features/superadmin y sus recursos en public/media`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=745-39170).
 
 | Jira | Subtarea | Puntos |
 | --- | --- | --- |
 | [KAN-76](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-76) | Maquetar personal y formularios de alta/desactivación de ejemplo | 2 |
-| [KAN-77](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-77) | Maquetar Central, lista de solicitudes y detalle con decisiones de ejemplo | 2 |
+| [KAN-77](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-77) | Maquetar Superadmin, lista de solicitudes y detalle con decisiones de ejemplo | 2 |
 | [KAN-78](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-78) | Conectar páginas privadas visuales; noindex y sin enlaces públicos; sin autenticación real | 1 |
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### INT-01 · Integrar navegación y datos de las cinco áreas
+### INT-01; Integrar navegación y datos de las cinco áreas
 
-Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-12-03.
+Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-12-04.
 
 Carpetas: `archivos compartidos coordinados por Oscar`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1).
 
@@ -345,7 +345,7 @@ Carpetas: `archivos compartidos coordinados por Oscar`. [Diseño de referencia](
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### INT-02 · Preparar privacidad administrativa y prueba final
+### INT-02; Preparar privacidad administrativa y prueba final
 
 Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-12-04.
 
@@ -359,20 +359,20 @@ Carpetas: `archivos compartidos coordinados por Oscar`. [Diseño de referencia](
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### REV-01 · Reunión semanal y acta del 20 de noviembre
+### REV-01; Revisar preparación y arranque del equipo
 
-Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-20.
+Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-23.
 
 Carpetas: `docs/seguimiento-semanal.md y Jira`. [Diseño de referencia](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1).
 
 | Jira | Subtarea | Puntos |
 | --- | --- | --- |
-| [KAN-85](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-85) | Revisar pantallas, PR y subtareas de los cinco; registrar avances y dificultades | 1 |
-| [KAN-86](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-86) | Preparar acta e informe semanal con evidencias y recomendaciones para la instructora | 1 |
+| [KAN-85](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-85) | Revisar la base publicada y los primeros bloqueos de instalación el 23 de noviembre | 1 |
+| [KAN-86](https://rojasricosworkspace-65f8ece0.atlassian.net/browse/KAN-86) | Registrar acuerdos de arranque con evidencias reales y responsables | 1 |
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### REV-02 · Reunión semanal y acta del 27 de noviembre
+### REV-02; Reunión semanal y acta del 27 de noviembre
 
 Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-11-27.
 
@@ -385,7 +385,7 @@ Carpetas: `docs/seguimiento-semanal.md y Jira`. [Diseño de referencia](https://
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### REV-03 · Reunión de cierre del sprint el 4 de diciembre
+### REV-03; Reunión de cierre del sprint el 4 de diciembre
 
 Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-12-04.
 
@@ -398,7 +398,7 @@ Carpetas: `docs/seguimiento-semanal.md y Jira`. [Diseño de referencia](https://
 
 Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escritorio. Dejamos PR y capturas; si es seguimiento, acta e informe con datos reales. No exigimos lógica de negocio.
 
-### ENT-01 · Preparar demostración y entrega del 7 de diciembre
+### ENT-01; Preparar demostración y entrega del 7 de diciembre
 
 Responsable: yo, Oscar Rojas. Fecha objetivo: 2026-12-07.
 
@@ -416,7 +416,7 @@ Vamos a revisar el diseño o boceto, los enlaces y la adaptación a celular/escr
 
 La pantalla se puede abrir desde su ruta, tiene los estilos y recursos acordados y permite recorrer el flujo de ejemplo. La revisamos mediante PR y capturas. Los botones pueden navegar a pantallas preparadas con datos fijos; no tienen que enviar formularios ni comprobar credenciales.
 
-Si falta tiempo, priorizamos el recorrido principal. Cuenta de comensal completa, amigos y notificaciones, y Central avanzado se revisan después. Si alguien termina antes, toma una subtarea acordada de otra área, se la asignamos y define los archivos que va a tocar. Una carpeta tiene un responsable de coordinación, no un dueño que impide colaborar.
+Si falta tiempo, priorizamos el recorrido principal. Cuenta de comensal completa, amigos y notificaciones, y Superadmin avanzado se revisan después. Si alguien termina antes, toma una subtarea acordada de otra área, se la asignamos y define los archivos que va a tocar. Una carpeta tiene un responsable de coordinación, no un dueño que impide colaborar.
 
 El detalle del informe semanal está en [seguimiento-semanal.md](seguimiento-semanal.md).
 
