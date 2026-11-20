@@ -92,6 +92,18 @@ Los nombres entre paréntesis son grupos: no se incluyen en la URL. `(publico)/p
 
 Los menús provisionales de las áreas internas ayudan a comprobar rutas; cada responsable los adapta a su diseño. Tener una ruta no significa añadirla al menú principal. El público conserva Inicio, Restaurantes, Cómo funciona, Planes, Para restaurantes y Quiénes somos, más los accesos de cuenta. Las otras páginas se descubren desde tarjetas, botones o el footer según Figma.
 
+### Ajuste pendiente: separar el acceso del menú de cuenta
+
+Al comenzar el diseño de inicio de sesión detectamos que `/entrar` recibe el encabezado de `(comensal)`, aunque la pantalla de Figma no lo tiene. Este ajuste todavía no está aplicado: no existe el grupo `(acceso)` en la base actual.
+
+En la rama de trabajo del acceso vamos a crear `src/app/(acceso)` y mover allí la carpeta `entrar` completa desde `src/app/(comensal)`. Su dirección seguirá siendo `/entrar`, porque los nombres entre paréntesis no forman parte de la URL. Su pantalla seguirá en `src/features/comensal/pages/EntrarPage.tsx` y su CSS en `src/features/comensal/styles/EntrarPage.module.css`.
+
+No dejamos una copia del mismo page.tsx en ambos grupos: competirían por la misma dirección. Mover solo la ruta a otro grupo del mismo nivel no cambia la profundidad de sus importaciones relativas. Si movemos un archivo a otra profundidad o cambia un nombre, comprobamos sus importaciones.
+
+El acceso seguirá recibiendo el layout raíz, pero no el layout hermano de `(comensal)`. Después revisaremos registro, recuperación y restablecimiento para decidir su agrupación según el diseño. No ocultamos el encabezado con CSS para corregir una agrupación incorrecta.
+
+Este ajuste lo preparo yo, Oscar, en una rama y un PR pequeños. Los compañeros no mueven las mismas carpetas en paralelo. Cuando se integre, actualizan su copia siguiendo la guía de colaboración. Si tienen una rama abierta que toca estos archivos, coordinamos la incorporación y revisamos cualquier conflicto. El mapa de archivos se actualizará cuando el movimiento se haya realizado; no lo presentamos como ya hecho.
+
 ## 5. Qué representa /r
 
 Elegimos `r` como abreviatura de restaurante. No tiene un significado especial para Next.js.
