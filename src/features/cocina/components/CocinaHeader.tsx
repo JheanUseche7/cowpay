@@ -5,7 +5,7 @@ import {
   cocineroEjemplo,
   restauranteEjemplo,
   turnoEjemplo,
-} from "../datosEjemplos";
+} from "../datosEjemplo";
 import styles from "../styles/CocinaHeader.module.css";
 
 export function CocinaHeader() {
