@@ -1,7 +1,217 @@
 .page {
-  padding: 24px;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  min-height: 100dvh;
 }
 
-.page h1 {
-  margin-top: 0;
+/* Panel izquierdo */
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 48px;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  display: block;
+  width: 130px;
+  height: auto;
+}
+
+.mensaje {
+  margin: auto 0;
+}
+
+.mensaje h1 {
+  margin: 0 0 12px;
+  font-size: 36px;
+}
+
+.mensaje > p {
+  max-width: 400px;
+  margin: 0;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.beneficios li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pie {
+  margin: 0;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Panel derecho */
+.acceso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.contenido {
+  width: 100%;
+  max-width: 420px;
+}
+
+.contenido h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.subtitulo {
+  margin: 8px 0 0;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.etiquetaConEnlace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recuperar {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-verde-para-los-botones);
+  text-decoration: none;
+}
+
+.recuperar:hover {
+  text-decoration: underline;
+}
+
+.entradaConIcono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.entradaConIcono svg {
+  flex-shrink: 0;
+  color: #9ca3af;
+}
+
+.entradaConIcono input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+.entradaConIcono:focus-within {
+  border-color: var(--color-verde-para-los-botones);
+}
+
+.recordar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.recordar input {
+  accent-color: var(--color-verde-para-los-botones);
+}
+
+.botonEntrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 12px;
+  background-color: var(--color-verde-para-los-botones);
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.botonEntrar:hover {
+  filter: brightness(0.92);
+}
+
+.aviso {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 14px;
+  border-radius: 12px;
+  background-color: #eff6ff;
+  color: #1e40af;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.aviso svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .presentacion {
+    padding: 24px;
+  }
+
+  .mensaje {
+    margin: 24px 0 0;
+  }
+
+  .mensaje h1 {
+    font-size: 28px;
+  }
+
+  .beneficios,
+  .pie {
+    display: none;
+  }
+
+  .acceso {
+    align-items: flex-start;
+    padding: 32px 24px;
+  }
 }
