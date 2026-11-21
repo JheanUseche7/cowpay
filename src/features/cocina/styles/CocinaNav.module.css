@@ -1,5 +1,33 @@
 .nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  gap: 28px;
+}
+
+.enlace,
+.activo {
+  padding: 6px 0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.enlace {
+  color: #6b7280;
+}
+
+.enlace:hover {
+  color: #111827;
+}
+
+.activo {
+  color: #c2410c;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    order: 3;
+    width: 100%;
+    gap: 20px;
+    overflow-x: auto;
+  }
 }
