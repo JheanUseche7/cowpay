@@ -4,7 +4,7 @@ import styles from "../styles/CocinaNav.module.css";
 export function CocinaNav() {
   return (
     <nav className={styles.nav} aria-label="Navegación de Cocina">
-      <Link href="/cocina/entrar">entrar</Link>
+      <Link href="/cocina/login">entrar</Link>
       <Link href="/cocina">cocina</Link>
       <Link href="/cocina/historial">historial</Link>
       <Link href="/cocina/menu">menu</Link>
