@@ -2,6 +2,42 @@
   padding: 24px;
 }
 
-.page h1 {
-  margin-top: 0;
+/* Visible para lectores de pantalla, oculto en la vista */
+.oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.columna {
+  min-height: 420px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.columna h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .tablero {
+    grid-template-columns: 1fr;
+  }
+
+  .columna {
+    min-height: 160px;
+  }
 }
