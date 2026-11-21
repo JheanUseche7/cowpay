@@ -18,7 +18,7 @@ export default function PublicoLayout({ children }: PublicoLayoutProps) {
           <Link href="/nosotros">Quiénes somos</Link>
         </nav>
         <div className={styles.accesos}>
-          <Link href="/entrar">Iniciar sesión</Link>
+          <Link href="/login">Iniciar sesión</Link>
           <Link href="/registro">Crear cuenta gratis</Link>
         </div>
       </header>
