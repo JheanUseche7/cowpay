@@ -1,3 +1,7 @@
+:root{
+  --color-negro: #374151;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -6,6 +10,9 @@
   padding: 16px 24px;
   border-bottom: 1px solid #dddd;
   flex-wrap: wrap;
+  width: 20%;
+  min-height: 100vh;
+  background: var(--color-negro);
 }
 
 .logo {
