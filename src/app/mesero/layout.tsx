@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { MeseroHeader } from "../../features/mesero/components/MeseroHeader";
+import styles from "../../features/mesero/styles/MeseroLayout.module.css";
 
 type MeseroLayoutProps = {
   children: ReactNode;
@@ -8,9 +8,11 @@ type MeseroLayoutProps = {
 
 export default function MeseroLayout({ children }: MeseroLayoutProps) {
   return (
-    <div>
-      <MeseroHeader />
-      {children}
+    <div className={styles.layout}>
+      <aside className={styles.sidebar}>
+        <MeseroHeader />
+      </aside>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 }

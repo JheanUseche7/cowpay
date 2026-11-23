@@ -7,13 +7,13 @@ let ruta_del_logo_de_cowpay = "/media/compartido/logo-cowpay-removebg.png";
 export function MeseroHeader() {
   return (
     <header className={styles.header}>
-      <Image
-        src={ruta_del_logo_de_cowpay}
-        alt="Cowpay logo"
-        width={953}
-        height={262}
-        className={styles.logo}
-      />
+        <Image
+          src={ruta_del_logo_de_cowpay}
+          alt="Cowpay logo"
+          width={240}
+          height={65}
+          className={styles.logo}
+        />
       <MeseroNav />
     </header>
   );
