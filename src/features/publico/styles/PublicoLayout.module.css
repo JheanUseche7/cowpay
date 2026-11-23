@@ -1,14 +1,58 @@
+
+
 .header {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding: 16px 24px;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #faf7f7;
+  max-width: 2000px;   
+  margin:0 auto;      
+  padding: 30px 2px; 
+
 }
 
-.nav,
+.logo {
+  height: 32px;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #2e7d32;
+}
+
 .accesos {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  align-items: center;
+  gap: 24px;
+}
+
+.accesos a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.accesos a.boton {
+  background: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.accesos a.boton:hover {
+  background: #1b5e20;
 }
