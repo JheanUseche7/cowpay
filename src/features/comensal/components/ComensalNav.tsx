@@ -14,7 +14,7 @@ export function ComensalNav() {
       <Link href="/r/arepique/mesa/AX7K2/pagar">pagar</Link>
       <Link href="/r/arepique/mesa/AX7K2/confirmacion">confirmacion</Link>
       <Link href="/r/arepique/mesa/AX7K2/resena">resena</Link>
-      <Link href="/entrar">entrar</Link>
+      <Link href="/login">entrar</Link>
       <Link href="/registro">registro</Link>
       <Link href="/recuperar">recuperar</Link>
       <Link href="/restablecer">restablecer</Link>
