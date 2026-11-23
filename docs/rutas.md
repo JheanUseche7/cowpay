@@ -109,14 +109,14 @@ Referencias: [tablero de cocina](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n
 
 | Ruta | Pantalla | Prioridad |
 | --- | --- | --- |
-| `/cocina/entrar` | Inicio de sesión | P0 |
+| `/cocina/login` | Inicio de sesión | P0 |
 | `/cocina` | Tablero y estados de pedidos | P0 |
 | `/cocina/historial` | Pedidos preparados | P1 |
 | `/cocina/menu` | Consulta de platos | P1 |
 | `/cocina/turno` | Contadores del turno | P1 |
 | `/cocina/perfil` | Perfil | P1 |
 | `/cocina/recuperar` | Recuperación visual | P1 |
-| `/caja/entrar` | Inicio de sesión | P0 |
+| `/caja/login` | Inicio de sesión | P0 |
 | `/caja/abrir` | Apertura de caja simulada | P0 |
 | `/caja` | Resumen de caja | P0 |
 | `/caja/cuentas` | Cuentas abiertas | P0 |
@@ -245,7 +245,7 @@ Este inventario corresponde a los archivos preparados el 20 de noviembre. La rut
 | `/caja/perfil` | `src/features/caja/pages/PerfilPage.tsx` |
 | `/caja/recuperar` | `src/features/caja/pages/RecuperarPage.tsx` |
 | `/caja/turno` | `src/features/caja/pages/TurnoPage.tsx` |
-| `/cocina/entrar` | `src/features/cocina/pages/EntrarPage.tsx` |
+| `/cocina/login` | `src/features/cocina/pages/EntrarPage.tsx` |
 | `/cocina/historial` | `src/features/cocina/pages/HistorialPage.tsx` |
 | `/cocina/menu` | `src/features/cocina/pages/MenuPage.tsx` |
 | `/cocina` | `src/features/cocina/pages/InicioCocinaPage.tsx` |

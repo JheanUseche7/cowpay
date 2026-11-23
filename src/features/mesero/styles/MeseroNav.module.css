@@ -1,14 +1,185 @@
-.nav {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+:root {
+  --color-blanco: #ffffff;
+  --color-agua-marina-hover: #0d9488;
+  --color-agua-marina-active: #167169;
+  --color-rojo: #dc2626;
+  --color-rojo-hover: #c10000;
+  --color-rojo-active: #840000;
 }
 
-.nav a {
-  color: #000;
+.nav {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.botonMenu,
+.logoMenu,
+.botonCerrar {
+  display: none;
+}
+
+.enlaces {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.enlaces a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 10px;
+  color: var(--color-blanco);
   text-decoration: none;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+.enlaces a:not(.activo):not(.cerrarSesion):hover {
+  background: var(--color-agua-marina-active);
 }
+
+.activo {
+  background: var(--color-agua-marina-hover);
+}
+
+.nombreRestaurante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.nombreRestaurante h2 {
+  margin: 0;
+  color: var(--color-blanco);
+  font-size: 20px;
+  text-align: center;
+}
+
+.nombreRestaurante span {
+  display: block;
+  color: var(--color-agua-marina-hover);
+  font-size: 12px;
+  text-align: center;
+}
+
+.nombreRestaurante .cerrarSesion {
+  background: var(--color-rojo);
+  text-align: center;
+}
+
+.nombreRestaurante .cerrarSesion:hover { background: var(--color-rojo-hover); }
+.nombreRestaurante .cerrarSesion:active { background: var(--color-rojo-active); }
+
+@media (max-width: 767px) {
+  .nav { flex: 0 0 auto; }
+
+  .botonMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 44px;
+    min-width: 44px;
+    box-sizing: border-box;
+    min-height: 44px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    background: #26313f;
+    color: var(--color-blanco);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .botonMenu:focus-visible,
+  .botonCerrar:focus-visible {
+    outline: 3px solid #5eead4;
+    outline-offset: 2px;
+  }
+
+  .iconoMenu { font-size: 20px; line-height: 1; }
+
+  .enlaces {
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-height: none;
+    box-sizing: border-box;
+    gap: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: max(22px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+    background: #26313f;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms ease,
+      visibility 0s linear 280ms;
+    pointer-events: none;
+  }
+
+  .enlacesAbiertos {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms ease,
+      visibility 0s;
+  }
+
+  .logoMenu {
+    position: relative;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 108px;
+    margin: 0 auto 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  }
+
+  .logoMovil {
+    display: block;
+    width: min(230px, 62vw);
+    height: auto;
+  }
+
+  .botonCerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--color-blanco);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .botonCerrar span { font-size: 30px; line-height: 1; }
+  .enlaces a { flex: 0 0 auto; padding: 13px 14px; font-size: 16px; }
+  .nombreRestaurante { margin-top: auto; padding-top: 24px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .enlaces { transition-duration: 0.01ms; }
+  }
+}
+

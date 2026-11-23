@@ -186,7 +186,7 @@ export default function Page() {
         <p>Responsable: Santiago Evanz</p>
         <ul>
           <li>
-            <Link href="/cocina/entrar">/cocina/entrar</Link>
+            <Link href="/cocina/login">/cocina/login</Link>
           </li>
           <li>
             <Link href="/cocina">/cocina</Link>
